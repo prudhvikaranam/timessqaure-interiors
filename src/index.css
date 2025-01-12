@@ -143,6 +143,10 @@ body {
   color: white;
 }
 
+.body-container h1{
+font-size: 3vw;
+}
+
 .body-icon {
   min-width: 50px;
   max-width: 100px;
@@ -162,6 +166,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .work-card>* {
@@ -371,22 +376,7 @@ body {
 
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .work-cards {
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .work-card {
-    min-width: 80%;
-    max-width: 90%;
-    background-color: aliceblue;
-    text-align: center;
-  }
-
-  .work-card img {
-    width: 70%;
-  }
-
+  
 
 }
 
@@ -411,6 +401,31 @@ body {
 
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .body-container h1{
+    font-size: 5vw;
+    }
+
+
+
+    .work-cards {
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .work-card {
+      min-width: 80%;
+      max-width: 90%;
+      background-color: aliceblue;
+      text-align: center;
+    }
+  
+    .work-card img {
+      width: 70%;
+    }
+  
+
+
+
   .project-container .images-container {
     width: 100%;
     flex-direction: column;
@@ -428,7 +443,8 @@ body {
 
   .project-container .images-container .right-container img,
   .project-container .images-container .left-container img {
-    height: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 
 
@@ -436,7 +452,22 @@ body {
     flex-basis: 100%;
   }
 
+  .project-designer, .project-designer .lt-c{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
 
+
+  
+  .project-container .project-designer{
+    flex-direction: column;
+  }
+
+
+  .customers-container .customer-review{
+    flex-basis: 100%;
+  }
 
 }
 
@@ -464,6 +495,6 @@ body {
   color: #ccc;
 }
 
-.sections-container{
+.sections-container {
   background-color: white;
 }

@@ -134,6 +134,15 @@ export const BodyComponent = () => {
           </div>
         </div>
 
+
+
+
+
+
+
+
+
+
         <div className="whyUs-container mr-tb-40 pd-lr-40">
           <h3 className="mr-tb-40 text-align-c">WHY US</h3>
           <p className="mr-tb-30 text-align-c">
@@ -222,7 +231,7 @@ export const BodyComponent = () => {
           </p>
 
           <div className="reviews-container">
-            <div className="customer-review mr-tb-40">
+            <div className="customer-review">
               <div className="review- mr-tb-10">
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
@@ -244,7 +253,7 @@ export const BodyComponent = () => {
               </div>
             </div>
 
-            <div className="customer-review mr-tb-40">
+            <div className="customer-review">
               <div className="review- mr-tb-10">
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
@@ -266,7 +275,7 @@ export const BodyComponent = () => {
               </div>
             </div>
 
-            <div className="customer-review mr-tb-40">
+            <div className="customer-review">
               <div className="review- mr-tb-10">
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy

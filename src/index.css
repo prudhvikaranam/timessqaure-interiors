@@ -42,14 +42,6 @@ body {
 
 
 
-.app-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/images/homebg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100%;
-}
 
 body {
   font-family: "Varela Round", sans-serif;
@@ -135,16 +127,22 @@ body {
 
 
 .body-container {
-  height: calc(100vh - 70px);
+  height: calc(100vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/images/homebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -70px;
 }
 
-.body-container h1{
-font-size: 3vw;
+.body-container h1 {
+  font-size: 3vw;
 }
 
 .body-icon {
@@ -375,10 +373,7 @@ font-size: 3vw;
 
 
 
-@media (min-width: 320px) and (max-width: 768px) {
-  
-
-}
+@media (min-width: 320px) and (max-width: 768px) {}
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -401,28 +396,28 @@ font-size: 3vw;
 
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .body-container h1{
+  .body-container h1 {
     font-size: 5vw;
-    }
+  }
 
 
 
-    .work-cards {
-      justify-content: center;
-      gap: 15px;
-    }
-  
-    .work-card {
-      min-width: 80%;
-      max-width: 90%;
-      background-color: aliceblue;
-      text-align: center;
-    }
-  
-    .work-card img {
-      width: 70%;
-    }
-  
+  .work-cards {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .work-card {
+    min-width: 80%;
+    max-width: 90%;
+    background-color: aliceblue;
+    text-align: center;
+  }
+
+  .work-card img {
+    width: 70%;
+  }
+
 
 
 
@@ -452,20 +447,21 @@ font-size: 3vw;
     flex-basis: 100%;
   }
 
-  .project-designer, .project-designer .lt-c{
+  .project-designer,
+  .project-designer .lt-c {
     width: 100%;
     align-items: center;
     text-align: center;
   }
 
 
-  
-  .project-container .project-designer{
+
+  .project-container .project-designer {
     flex-direction: column;
   }
 
 
-  .customers-container .customer-review{
+  .customers-container .customer-review {
     flex-basis: 100%;
   }
 

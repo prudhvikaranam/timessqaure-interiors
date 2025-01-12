@@ -1,6 +1,7 @@
 import logo from "../assets/images/logo.png";
 import { navData } from "../assets/data/data";
 import { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ export const Header = () => {
       const element = document.getElementById(menuItem);
       window.scrollTo({
         top: element.offsetTop - 100,
-        behavior: 'smooth'
+        behavior: "smooth"
       });
 
       if (device === "mobile") {
@@ -46,7 +47,13 @@ export const Header = () => {
 
                       <div className="sub-menu">
                         {data.children.map((childmenus, j) => {
-                          return <p>{childmenus}</p>;
+                          return (
+                            <p>
+                              <Link to={`./ideas/${childmenus.id}`}>
+                                {childmenus.name}
+                              </Link>
+                            </p>
+                          );
                         })}
                       </div>
                     </div>
@@ -54,7 +61,7 @@ export const Header = () => {
                 } else {
                   return (
                     <p onClick={() => goToSection(data.id, "desktop")}>
-                      {data.name}
+                      <Link to={`/`}>{data.name}</Link>
                     </p>
                   );
                 }
@@ -82,7 +89,7 @@ export const Header = () => {
 
                     <div className="sub-menu mobile">
                       {data.children.map((childmenus, j) => {
-                        return <p>{childmenus}</p>;
+                        return <p>{childmenus.name}</p>;
                       })}
                     </div>
                   </div>
@@ -94,7 +101,7 @@ export const Header = () => {
                       goToSection(data.id, "mobile");
                     }}
                   >
-                    {data.name}
+                    <Link to={`/`}>{data.name}</Link>
                   </p>
                 );
               }
@@ -102,6 +109,7 @@ export const Header = () => {
           </div>
         )}
       </div>
+      <Outlet />
     </>
   );
 };

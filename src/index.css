@@ -99,7 +99,7 @@ body {
 }
 
 .menu-items .sub-menu-items p,
-.menu-items a {
+.menu-items p {
   display: flex;
   align-items: center;
   height: 100%;

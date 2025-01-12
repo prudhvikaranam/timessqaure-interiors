@@ -98,7 +98,7 @@ body {
   text-transform: uppercase;
 }
 
-.menu-items .sub-menu-items a,
+.menu-items .sub-menu-items p,
 .menu-items a {
   display: flex;
   align-items: center;
@@ -119,7 +119,7 @@ body {
   background: whitesmoke;
 }
 
-.menu-items.desktop .sub-menu-items .sub-menu a {
+.menu-items.desktop .sub-menu-items .sub-menu p {
   padding: 10px;
   text-align: center;
   border-bottom: 1px solid grey;
@@ -308,8 +308,8 @@ body {
     top: 70px;
   }
 
-  .mobile-menu-items a,
-  .mobile-menu-items .sub-menu-items>a {
+  .mobile-menu-items p,
+  .mobile-menu-items .sub-menu-items>p {
     border-bottom: 1px solid grey;
     padding: 10px 0px;
     text-transform: uppercase;
@@ -335,7 +335,7 @@ body {
     margin: 0px 31px;
   }
 
-  .mobile-menu-items .sub-menu-items:hover .sub-menu a {
+  .mobile-menu-items .sub-menu-items:hover .sub-menu p {
     border-bottom: 1px solid #a5a2a2;
     text-transform: capitalize;
 

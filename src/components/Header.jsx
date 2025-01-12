@@ -42,11 +42,11 @@ export const Header = () => {
                 if (data.children) {
                   return (
                     <div className="sub-menu-items">
-                      <a href="#">{data.name}</a>
+                      <p>{data.name}</p>
 
                       <div className="sub-menu">
                         {data.children.map((childmenus, j) => {
-                          return <a href="#">{childmenus}</a>;
+                          return <p>{childmenus}</p>;
                         })}
                       </div>
                     </div>
@@ -78,24 +78,24 @@ export const Header = () => {
               if (data.children) {
                 return (
                   <div className="sub-menu-items mobile">
-                    <a href="#">{data.name}</a>
+                    <p>{data.name}</p>
 
                     <div className="sub-menu mobile">
                       {data.children.map((childmenus, j) => {
-                        return <a href="#">{childmenus}</a>;
+                        return <p>{childmenus}</p>;
                       })}
                     </div>
                   </div>
                 );
               } else {
                 return (
-                  <a href="#"
+                  <p
                     onClick={() => {
                       goToSection(data.id, "mobile");
                     }}
                   >
                     {data.name}
-                  </a>
+                  </p>
                 );
               }
             })}

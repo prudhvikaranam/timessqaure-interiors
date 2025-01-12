@@ -84,7 +84,7 @@ export const BodyComponent = () => {
                 <img src={user1} alt="designer" className="mr-tb-10" />
               </div>
               <div className="lt-c">
-                <p className="project-designer-about mr-tb-10">
+                <div className="project-designer-about mr-tb-10">
                   <p className="designer-name mr-tb-10">
                     Chandu
                     <br />
@@ -94,7 +94,7 @@ export const BodyComponent = () => {
                   Consectetur fugiat nobis debitis ipsa dolores aspernatur,
                   natus eveniet voluptates dignissimos ab ipsam delectus sit
                   veniam accusamus minus cum voluptas iste. Repellat!
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@ export const BodyComponent = () => {
                 <img src={user2} alt="designer" className="mr-tb-10" />
               </div>
               <div className="lt-c">
-                <p className="project-designer-about mr-tb-10">
+                <div className="project-designer-about mr-tb-10">
                   <p className="designer-name mr-tb-10">
                     Swathi
                     <br />
@@ -128,7 +128,7 @@ export const BodyComponent = () => {
                   Consectetur fugiat nobis debitis ipsa dolores aspernatur,
                   natus eveniet voluptates dignissimos ab ipsam delectus sit
                   veniam accusamus minus cum voluptas iste. Repellat!
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -224,68 +224,68 @@ export const BodyComponent = () => {
           <div className="reviews-container">
             <div className="customer-review mr-tb-40">
               <div className="review- mr-tb-10">
-                <p className="customer-name mr-tb-10">
+                <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
                   Raheja Constructions
-                </p>
+                </div>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consectetur fugiat nobis debitis ipsa dolores aspernatur, natus
                 eveniet voluptates dignissimos ab ipsam delectus sit veniam
                 accusamus minus cum voluptas iste. Repellat!
                 <br />
-                <div class="star-rating">
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
+                <div className="star-rating">
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
                 </div>
               </div>
             </div>
 
             <div className="customer-review mr-tb-40">
-              <p className="review- mr-tb-10">
-                <p className="customer-name mr-tb-10">
+              <div className="review- mr-tb-10">
+                <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
                   Prestige Apartments
-                </p>
+                </div>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consectetur fugiat nobis debitis ipsa dolores aspernatur, natus
                 eveniet voluptates dignissimos ab ipsam delectus sit veniam
                 accusamus minus cum voluptas iste. Repellat!
                 <br />
-                <div class="star-rating">
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
+                <div className="star-rating">
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
                 </div>
-              </p>
+              </div>
             </div>
 
             <div className="customer-review mr-tb-40">
-              <p className="review- mr-tb-10">
-                <p className="customer-name mr-tb-10">
+              <div className="review- mr-tb-10">
+                <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
                   EAPL apartment
-                </p>
+                </div>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consectetur fugiat nobis debitis ipsa dolores aspernatur, natus
                 eveniet voluptates dignissimos ab ipsam delectus sit veniam
                 accusamus minus cum voluptas iste. Repellat!
                 <br />
-                <div class="star-rating">
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
-                  <span class="star filled">&#9733;</span>
-                  <span class="star">&#9733;</span>
+                <div className="star-rating">
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
+                  <span className="star">&#9733;</span>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
         </div>

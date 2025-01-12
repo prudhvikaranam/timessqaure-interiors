@@ -5,11 +5,9 @@ import { BodyComponent } from './components/Body';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <Header />
-
       <BodyComponent/>
-
     </div>
   );
 }

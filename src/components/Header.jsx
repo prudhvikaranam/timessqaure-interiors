@@ -11,6 +11,21 @@ export const Header = () => {
     setshowHamburgerMenu(!isMenuOpen);
   };
 
+  const goToSection = (menuItem, device) => {
+    if (document.getElementById(menuItem)) {
+      const element = document.getElementById(menuItem);
+      window.scrollTo({
+        top: element.offsetTop - 100,
+        behavior: 'smooth'
+      });
+
+      if (device === "mobile") {
+        setIsMenuOpen(!isMenuOpen);
+        setshowHamburgerMenu(!isMenuOpen);
+      }
+    }
+  };
+
   return (
     <>
       <div className="main-header-container">
@@ -37,7 +52,11 @@ export const Header = () => {
                     </div>
                   );
                 } else {
-                  return <a>{data.name}</a>;
+                  return (
+                    <a onClick={() => goToSection(data.id, "desktop")}>
+                      {data.name}
+                    </a>
+                  );
                 }
               })}
             </div>
@@ -69,7 +88,15 @@ export const Header = () => {
                   </div>
                 );
               } else {
-                return <a>{data.name}</a>;
+                return (
+                  <a
+                    onClick={() => {
+                      goToSection(data.id, "mobile");
+                    }}
+                  >
+                    {data.name}
+                  </a>
+                );
               }
             })}
           </div>

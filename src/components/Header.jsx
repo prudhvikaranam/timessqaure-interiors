@@ -53,9 +53,9 @@ export const Header = () => {
                   );
                 } else {
                   return (
-                    <a onClick={() => goToSection(data.id, "desktop")}>
+                    <p onClick={() => goToSection(data.id, "desktop")}>
                       {data.name}
-                    </a>
+                    </p>
                   );
                 }
               })}

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 
 export const IdeaItems = () => {
   const { ideaRoom } = useParams();
+  const designer1galleryRef = useRef(null);
 
   const images = {
     bedroom: [
@@ -26,6 +27,28 @@ export const IdeaItems = () => {
     ]
   };
 
+    useEffect(() => {
+      if (window.lightGallery) {
+        designer1galleryRef.current = window.lightGallery(
+          document.getElementById("ideas-gallery"),
+          {
+            download: false,
+            selector: "img",
+            closeOnOutside: true
+          }
+        );
+      }
+  
+      return () => {
+        if (designer1galleryRef.current) {
+          designer1galleryRef.current.destroy(true);
+        }
+  
+       
+      };
+    }, []);
+
+
   const filteredIdea = images[ideaRoom] || [];
 
   return (
@@ -36,7 +59,7 @@ export const IdeaItems = () => {
         </h3>
         <p>Choose from the wide range of interiors</p>
 
-        <div className="ideas-container mr-tb-40 ">
+        <div className="ideas-container mr-tb-40" id="ideas-gallery">
           {filteredIdea.length
             ? filteredIdea.map((image, i) => {
                 return (

@@ -91,7 +91,7 @@ export const Header = () => {
                       {data.children.map((childmenus, j) => {
                         return (
                           <p>
-                            <Link to={`./ideas/${childmenus.id}`}>
+                            <Link to={`./ideas/${childmenus.id}`} onClick={toggleMenu}>
                               {childmenus.name}
                             </Link>
                           </p>
@@ -107,7 +107,7 @@ export const Header = () => {
                       goToSection(data.id, "mobile");
                     }}
                   >
-                    <Link to={`/`}>{data.name}</Link>
+                    <Link to={`/`} onClick={toggleMenu}>{data.name}</Link>
                   </p>
                 );
               }

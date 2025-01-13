@@ -40,12 +40,14 @@ export const IdeaItems = () => {
           {filteredIdea.length
             ? filteredIdea.map((image, i) => {
                 return (
-                  <img
-                    src={require(`../assets/images/BEDROOM/${image}`)}
-                    alt={`bedrooms_${i}`}
-                    key={i}
-                    className="image"
-                  />
+                  <div className="idea-image">
+                    <img
+                      src={require(`../assets/images/BEDROOM/${image}`)}
+                      alt={`bedrooms_${i}`}
+                      key={i}
+                      className="image"
+                    />
+                  </div>
                 );
               })
             : "Interiors for selected Ideas are loading"}

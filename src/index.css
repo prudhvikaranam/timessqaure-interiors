@@ -10,13 +10,16 @@ body {
   width: 60%;
   height: 1px;
   background-color: #555;
-  margin: 0px auto;
+  margin: 0px auto 70px;
 }
 
 .text-align-c {
   text-align: center;
 }
 
+.pd-tb-80-rl-40{
+  padding:  40px
+}
 
 .pd-lr-40 {
   padding: 0px 40px;
@@ -52,7 +55,13 @@ body {
   color: black;
 }
 
-
+.app-container{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/images/homebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .main-header-container {
   display: flex;
@@ -127,18 +136,13 @@ body {
 
 
 .body-container {
-  height: calc(100vh);
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/images/homebg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin-top: -70px;
+ 
 }
 
 .body-container h1 {
@@ -157,14 +161,21 @@ body {
   gap: 40px;
 }
 
+
+.sections-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .work-card {
   max-width: 25%;
-  background-color: aliceblue;
-  padding: 20px;
+  background-color: white;
+  padding: 40px 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: black;
 }
 
 .work-card>* {
@@ -178,15 +189,26 @@ body {
 }
 
 .work-card img {
-  width: 80%;
+  width: 60%;
 }
 
 .work-header {
   flex: 1 1;
 }
 
-
+.our-work-container, .whyUs-container{
+  background-color: rgba(0, 0, 0, 0.4); 
+  color: white;
+}
 /* For Projects */
+
+.our-projects-container, .customers-container {
+
+  background-color:  rgba(255, 255, 255, 0.91);
+  color: black;
+  
+}
+
 
 .project-container {
   display: flex;
@@ -237,9 +259,10 @@ body {
 }
 
 .project-designer .rt-c img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: auto;
   border-radius: 50%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
@@ -265,10 +288,11 @@ body {
 
 .whyUs-Details-container .container {
   flex-basis: 20%;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);;
   color: black;
+  border-radius: 5px;
 }
 
 
@@ -281,10 +305,10 @@ body {
 
 .customers-container .customer-review {
   flex-basis: 25%;
-  background-color: aliceblue;
+  background-color: white;
   padding: 40px;
   border-radius: 9px;
-  box-shadow: 1px 1px 0px 0px #555;
+  color: black;
 }
 
 
@@ -303,11 +327,11 @@ body {
 .ideas-container {
   display: grid;
   width: 80%;
-  grid-template-columns: repeat(5, minmax(auto,100%));
+  grid-template-columns: repeat(5, minmax(auto, 100%));
   gap: 10px;
 }
 
-.ideas-container .idea-image img{
+.ideas-container .idea-image img {
   width: 100%;
   height: 100%;
   aspect-ratio: 1 / 1;
@@ -423,9 +447,9 @@ body {
 
   .ideas-container {
 
-    grid-template-columns: repeat(3, minmax(auto,100%));
+    grid-template-columns: repeat(3, minmax(auto, 100%));
   }
-  
+
 
 
 }
@@ -446,7 +470,6 @@ body {
   .work-card {
     min-width: 80%;
     max-width: 90%;
-    background-color: aliceblue;
     text-align: center;
   }
 
@@ -504,13 +527,23 @@ body {
 
   .ideas-container {
 
-    grid-template-columns: repeat(2, minmax(auto,100%));
+    grid-template-columns: repeat(2, minmax(auto, 100%));
   }
-  
+
 
 
 }
 
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .menu-container {
+    justify-content: space-between;
+  }
+
+  .pd-lr-40 {
+    padding: 0px 10px;
+  }
+}
 
 
 
@@ -535,6 +568,19 @@ body {
   color: #ccc;
 }
 
-.sections-container {
-  background-color: white;
+
+h3::after{
+  content: '';
+  width: 100px;
+  height: 3px;
+  display: flex;
+  background-color: #dc1746;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+
+.clg-pri{
+  color: #dc1746;
+  font-weight: bolder;
 }

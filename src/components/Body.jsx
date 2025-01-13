@@ -51,20 +51,18 @@ export const BodyComponent = () => {
     <>
       <div className="body-container">
         <h1>Homes Designed For Tomorrow</h1>
-        <img src={staircase} alt="body-icon" className="body-icon" />
+        <img src={staircase} alt="body-icon" className="body-icon mr-tb-30" />
       </div>
 
       <div className="sections-container">
-        <div className="our-work-container mr-tb-40 pd-lr-40" id="ourWork">
-          <h3 className="mr-tb-40 text-align-c">HOW WE WORK</h3>
+        <div className="our-work-container pd-tb-80-rl-40" id="ourWork">
+          <h3 className=" text-align-c">HOW WE WORK</h3>
           <p className="mr-tb-30 text-align-c">
             Designing your newly-bought home has never been this simple before.
           </p>
           <div className="work-cards">
             <div className="work-card">
-              <div className="work-header">
-                <p>WE DESIGN FOR YOU.</p>
-              </div>
+              <p>WE DESIGN FOR YOU.</p>
 
               <img src={workDesign} alt="work-icon" className="work-icon" />
               <p>
@@ -73,9 +71,7 @@ export const BodyComponent = () => {
               </p>
             </div>
             <div className="work-card">
-              <div className="work-header">
-                <p>YOU VISUALIZE OUR DESIGN.</p>
-              </div>
+              <p>YOU VISUALIZE OUR DESIGN.</p>
 
               <img src={workDesign} alt="work-icon" className="work-icon" />
               <p>
@@ -95,10 +91,10 @@ export const BodyComponent = () => {
         </div>
 
         <div
-          className="our-projects-container mr-tb-40 pd-lr-40"
+          className="our-projects-container pd-tb-80-rl-40"
           id="recentProjects"
         >
-          <h3 className="mr-tb-40 text-align-c">OUR PROJECTS</h3>
+          <h3 className="text-align-c clg-pri">OUR PROJECTS</h3>
           <p className="mr-tb-30 text-align-c">
             Designing your newly-bought home has never been this simple before.
           </p>
@@ -238,8 +234,8 @@ export const BodyComponent = () => {
           </div>
         </div>
 
-        <div className="whyUs-container mr-tb-40 pd-lr-40">
-          <h3 className="mr-tb-40 text-align-c">WHY US</h3>
+        <div className="whyUs-container pd-tb-80-rl-40">
+          <h3 className="text-align-c">WHY US</h3>
           <p className="mr-tb-30 text-align-c">
             Designing your newly-bought home has never been this simple before.
           </p>
@@ -319,8 +315,8 @@ export const BodyComponent = () => {
           </div>
         </div>
 
-        <div className="customers-container mr-tb-40 pd-lr-40">
-          <h3 className="mr-tb-40 text-align-c">OUR CUSTOMER'S REVIEW</h3>
+        <div className="customers-container pd-tb-80-rl-40">
+          <h3 className="text-align-c  clg-pri">OUR CUSTOMER'S REVIEW</h3>
           <p className="mr-tb-30 text-align-c">
             Designing your newly-bought home has never been this simple before.
           </p>

@@ -89,7 +89,13 @@ export const Header = () => {
 
                     <div className="sub-menu mobile">
                       {data.children.map((childmenus, j) => {
-                        return <p>{childmenus.name}</p>;
+                        return (
+                          <p>
+                            <Link to={`./ideas/${childmenus.id}`}>
+                              {childmenus.name}
+                            </Link>
+                          </p>
+                        );
                       })}
                     </div>
                   </div>

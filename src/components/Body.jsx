@@ -9,8 +9,44 @@ import project_5 from "../assets/images/project-5.jpeg";
 import user1 from "../assets/images/user1.png";
 import user2 from "../assets/images/user2.jpg";
 import whyus from "../assets/images/whyus.png";
+import { useEffect, useRef } from "react";
 
 export const BodyComponent = () => {
+  const designer1galleryRef = useRef(null);
+  const designer2galleryRef = useRef(null);
+
+  useEffect(() => {
+    if (window.lightGallery) {
+      designer1galleryRef.current = window.lightGallery(
+        document.getElementById("designer1-gallery"),
+        {
+          download: false,
+          selector: "a",
+          closeOnOutside: true
+        }
+      );
+
+      designer2galleryRef.current = window.lightGallery(
+        document.getElementById("designer2-gallery"),
+        {
+          download: false,
+          selector: "a",
+          closeOnOutside: true
+        }
+      );
+    }
+
+    return () => {
+      if (designer1galleryRef.current) {
+        designer1galleryRef.current.destroy(true);
+      }
+
+      if (designer2galleryRef.current) {
+        designer2galleryRef.current.destroy(true);
+      }
+    };
+  }, []);
+
   return (
     <>
       <div className="body-container">
@@ -68,15 +104,49 @@ export const BodyComponent = () => {
           </p>
 
           <div className="project-container mr-tb-40">
-            <div className="images-container">
+            <div className="images-container" id="designer1-gallery">
               <div className="right-container">
-                <img src={project_1} alt="project" className="image image-1" />
-                <img src={project_2} alt="project" className="image image-2" />
-                <img src={project_3} alt="project" className="image image-3" />
-                <img src={project_4} alt="project" className="image image-4" />
+                <a href={project_1}>
+                  <img
+                    src={project_1}
+                    alt="project"
+                    className="image image-1"
+                    data-src={project_1}
+                  />
+                </a>
+                <a href={project_2}>
+                  <img
+                    src={project_2}
+                    alt="project"
+                    className="image image-2"
+                    data-src={project_2}
+                  />
+                </a>
+
+                <a href={project_3}>
+                  <img
+                    src={project_3}
+                    alt="project"
+                    className="image image-3"
+                  />
+                </a>
+
+                <a href={project_4}>
+                  <img
+                    src={project_4}
+                    alt="project"
+                    className="image image-4"
+                  />
+                </a>
               </div>
               <div className="left-container">
-                <img src={project_5} alt="project" className="image image-5" />
+                <a href={project_5}>
+                  <img
+                    src={project_5}
+                    alt="project"
+                    className="image image-5"
+                  />
+                </a>
               </div>
             </div>
             <div className="project-designer mr-tb-40">
@@ -102,15 +172,49 @@ export const BodyComponent = () => {
           <div className="divider"></div>
 
           <div className="project-container mr-tb-40">
-            <div className="images-container">
+            <div className="images-container" id="designer2-gallery">
               <div className="right-container">
-                <img src={project_1} alt="project" className="image image-1" />
-                <img src={project_2} alt="project" className="image image-2" />
-                <img src={project_3} alt="project" className="image image-3" />
-                <img src={project_4} alt="project" className="image image-4" />
+                <a href={project_1}>
+                  <img
+                    src={project_1}
+                    alt="project"
+                    className="image image-1"
+                    data-src={project_1}
+                  />
+                </a>
+                <a href={project_2}>
+                  <img
+                    src={project_2}
+                    alt="project"
+                    className="image image-2"
+                    data-src={project_2}
+                  />
+                </a>
+
+                <a href={project_3}>
+                  <img
+                    src={project_3}
+                    alt="project"
+                    className="image image-3"
+                  />
+                </a>
+
+                <a href={project_4}>
+                  <img
+                    src={project_4}
+                    alt="project"
+                    className="image image-4"
+                  />
+                </a>
               </div>
               <div className="left-container">
-                <img src={project_5} alt="project" className="image image-5" />
+                <a href={project_5}>
+                  <img
+                    src={project_5}
+                    alt="project"
+                    className="image image-5"
+                  />
+                </a>
               </div>
             </div>
             <div className="project-designer mr-tb-40">
@@ -133,15 +237,6 @@ export const BodyComponent = () => {
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
 
         <div className="whyUs-container mr-tb-40 pd-lr-40">
           <h3 className="mr-tb-40 text-align-c">WHY US</h3>

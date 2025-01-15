@@ -1,4 +1,3 @@
-import staircase from "../assets/images/staircase.png";
 import workDesign from "../assets/images/work-design.png";
 import project_1 from "../assets/images/project-1.jpeg";
 import project_2 from "../assets/images/project-2.jpeg";

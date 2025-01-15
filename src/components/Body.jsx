@@ -51,7 +51,49 @@ export const BodyComponent = () => {
     <>
       <div className="body-container">
         <h1>Homes Designed For Tomorrow</h1>
-        <img src={staircase} alt="body-icon" className="body-icon mr-tb-30" />
+
+        <svg
+          id="Capa_1"
+          x="0px"
+          y="0px"
+          width="70px"
+          height="50px"
+          viewBox="0 0 612 612"
+          className="drop-down-icon"
+        >
+          <g transform="matrix(-1.83642e-16 0.9997 -0.9997 -1.83642e-16 611.908 0.0917906)">
+            <g>
+              {" "}
+              <g id="fast_forward">
+                {" "}
+                <g>
+                  {" "}
+                  <path
+                    d="M325.402,0.296h-57.912L554.088,306L267.491,611.704h57.912L612,306L325.402,0.296z M57.912,0.296H0L286.597,306     L0,611.704h57.912L344.509,306L57.912,0.296z"
+                    data-original="#000000"
+                    class="active-path"
+                    data-old_color="#000000"
+                    fill="#FFFFFF"
+                  ></path>{" "}
+                </g>{" "}
+              </g>
+            </g>
+          </g>{" "}
+        </svg>
+
+        {/* <svg
+          version="1.1"
+          id="Layer_1"
+
+          x="0px"
+          y="0px"
+          viewBox="0 0 122.88 120.64"
+          className="drop-down-icon"
+          >
+          <g>
+            <path d="M108.91,54.03c1.63-1.55,3.74-2.31,5.85-2.28c2.11,0.03,4.2,0.84,5.79,2.44l0.12,0.12c1.5,1.58,2.23,3.6,2.2,5.61 c-0.03,2.01-0.82,4.02-2.37,5.55c-17.66,17.66-35.61,35.13-53.4,52.68c-0.05,0.07-0.1,0.13-0.16,0.19 c-1.63,1.55-3.76,2.31-5.87,2.28c-2.11-0.03-4.21-0.85-5.8-2.45l-0.26-0.27C37.47,100.43,19.87,82.98,2.36,65.46 C0.82,63.93,0.03,61.93,0,59.92c-0.03-2.01,0.7-4.03,2.21-5.61l0.15-0.15c1.58-1.57,3.66-2.38,5.76-2.41 c2.1-0.03,4.22,0.73,5.85,2.28l47.27,47.22L108.91,54.03L108.91,54.03z M106.91,2.26c1.62-1.54,3.73-2.29,5.83-2.26 c2.11,0.03,4.2,0.84,5.79,2.44l0.12,0.12c1.5,1.57,2.23,3.6,2.21,5.61c-0.03,2.01-0.82,4.02-2.37,5.55 C101.2,31.01,84.2,48.87,67.12,66.39c-0.05,0.07-0.11,0.14-0.17,0.21c-1.63,1.55-3.76,2.31-5.87,2.28 c-2.11-0.03-4.21-0.85-5.8-2.45C38.33,48.94,21.44,31.36,4.51,13.83l-0.13-0.12c-1.54-1.53-2.32-3.53-2.35-5.54 C2,6.16,2.73,4.14,4.23,2.56l0.15-0.15C5.96,0.84,8.05,0.03,10.14,0c2.1-0.03,4.22,0.73,5.85,2.28l45.24,47.18L106.91,2.26 L106.91,2.26z" />
+          </g>
+        </svg> */}
       </div>
 
       <div className="sections-container">
@@ -62,28 +104,30 @@ export const BodyComponent = () => {
           </p>
           <div className="work-cards">
             <div className="work-card">
-              <p>WE DESIGN FOR YOU.</p>
+              <p >WE DESIGN</p>
 
               <img src={workDesign} alt="work-icon" className="work-icon" />
               <p>
-                Book a design consultation with some of Hyderabad's best
+              <span className="prim-color font-b">01.</span>
+              Book a design consultation with some of Hyderabad's best
                 designers. Get your home designed for the dreams of tomorrow
               </p>
             </div>
             <div className="work-card">
-              <p>YOU VISUALIZE OUR DESIGN.</p>
+              <p>YOU VISUALIZE</p>
 
               <img src={workDesign} alt="work-icon" className="work-icon" />
               <p>
-                See your home in every angle and “try before you buy” furniture,
+              <span className="prim-color font-b">02.</span>See your home in every angle and “try before you buy” furniture,
                 using our Virtual Reality walkthrough
               </p>
             </div>
             <div className="work-card">
-              <p>WE IMPLEMENT THE DESIGN</p>
+              <p>WE IMPLEMENT</p>
               <img src={workDesign} alt="work-icon" className="work-icon" />
               <p>
-                Sit back & Relax. In just 60 days, an army of experts will make
+              <span className="prim-color font-b">03.</span>
+              Sit back & Relax. In just 60 days, an army of experts will make
                 the Virtual Reality a glorious reality
               </p>
             </div>
@@ -235,15 +279,15 @@ export const BodyComponent = () => {
         </div>
 
         <div className="whyUs-container pd-tb-80-rl-40">
-          <h3 className="text-align-c">WHY US</h3>
-          <p className="mr-tb-30 text-align-c">
+          <h3 className="text-align-c font-color-white">WHY US</h3>
+          <p className="mr-tb-30 text-align-c font-color-white">
             Designing your newly-bought home has never been this simple before.
           </p>
 
           <div className="whyUs-Details-container">
             <div className="container">
               <img src={whyus} alt="" />
-              <h4 className="heading-section">Personal Designer</h4>
+              <h4 className="heading-section prim-color mr-tb-20">Personal Designer</h4>
               <p>
                 Will transform your every need into functional & aesthetic
                 design, and help you plan your space intelligently
@@ -252,7 +296,7 @@ export const BodyComponent = () => {
 
             <div className="container">
               <img src={whyus} alt="" />
-              <h4 className="heading-section">VR Experience</h4>
+              <h4 className="heading-section prim-color mr-tb-20">VR Experience</h4>
               <p>
                 Will transform your every need into functional & aesthetic
                 design, and help you plan your space intelligently
@@ -261,7 +305,7 @@ export const BodyComponent = () => {
 
             <div className="container">
               <img src={whyus} alt="" />
-              <h4 className="heading-section">Impeccable Implementation</h4>
+              <h4 className="heading-section prim-color mr-tb-20">Impeccable Implementation</h4>
               <p>
                 Will transform your every need into functional & aesthetic
                 design, and help you plan your space intelligently
@@ -270,7 +314,7 @@ export const BodyComponent = () => {
 
             <div className="container">
               <img src={whyus} alt="" />
-              <h4 className="heading-section">Reputed Partners</h4>
+              <h4 className="heading-section prim-color mr-tb-20">Reputed Partners</h4>
               <p>
                 Will transform your every need into functional & aesthetic
                 design, and help you plan your space intelligently
@@ -279,7 +323,7 @@ export const BodyComponent = () => {
 
             <div className="container">
               <img src={whyus} alt="" />
-              <h4 className="heading-section">Personal Designer</h4>
+              <h4 className="heading-section prim-color mr-tb-20">Personal Designer</h4>
               <p>
                 Will transform your every need into functional & aesthetic
                 design, and help you plan your space intelligently
@@ -288,7 +332,7 @@ export const BodyComponent = () => {
 
             <div className="container">
               <img src={whyus} alt="" />
-              <h4 className="heading-section">VR Experience</h4>
+              <h4 className="heading-section prim-color mr-tb-20">VR Experience</h4>
               <p>
                 Will transform your every need into functional & aesthetic
                 design, and help you plan your space intelligently
@@ -297,7 +341,7 @@ export const BodyComponent = () => {
 
             <div className="container">
               <img src={whyus} alt="" />
-              <h4 className="heading-section">Impeccable Implementation</h4>
+              <h4 className="heading-section prim-color mr-tb-20">Impeccable Implementation</h4>
               <p>
                 Will transform your every need into functional & aesthetic
                 design, and help you plan your space intelligently
@@ -306,7 +350,7 @@ export const BodyComponent = () => {
 
             <div className="container">
               <img src={whyus} alt="" />
-              <h4 className="heading-section">Reputed Partners</h4>
+              <h4 className="heading-section prim-color mr-tb-20">Reputed Partners</h4>
               <p>
                 Will transform your every need into functional & aesthetic
                 design, and help you plan your space intelligently

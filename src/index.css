@@ -68,12 +68,14 @@ body {
   margin-top: 20px;
 }
 
-.app-container {
+.main-body-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/images/homebg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100%;
+  margin-top: -85px;
 }
 
 .main-header-container {
@@ -106,6 +108,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
+  height: 100%;
 }
 
 .menu-contact-details .contact-link img {
@@ -113,7 +116,9 @@ body {
   margin: 0px 10px;
 }
 
-
+.menuitems-container {
+  height: 70%;
+}
 
 
 
@@ -174,12 +179,25 @@ body {
 }
 
 .menu-items p:not(:last-child) {
-  border-right: 2px solid #fff;
+  /* border-right: 2px solid #fff; */
 }
 
 
-.dark-bg-menu-items p:not(:last-child) {
-  border-right: 2px solid black;
+.menu-items p:not(:last-child)::after {
+  /* border-right: 2px solid #fff; */
+  content: "";
+  width: 2px;
+  height: 40%;
+  background-color: white;
+}
+
+
+.dark-bg-menu-items p:not(:last-child)::after {
+  /* border-right: 2px solid #fff; */
+  content: "";
+  width: 2px;
+  height: 40%;
+  background-color: black;
 }
 
 
@@ -224,18 +242,17 @@ body {
 }
 
 .menu-contact-details {
-  margin: 0px 0px 15px 0px;
+  margin: 15px 0px 0px 0px;
   display: flex;
 }
 
 .body-container {
-  height: calc(100vh - 85px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   color: white;
-
+  height: 100vh;
 }
 
 .body-container h1 {
@@ -444,7 +461,7 @@ body {
 
   /* for Headers component */
 
-  .body-container h1{
+  .body-container h1 {
     padding: 20% 0px 0px 0px;
   }
 
@@ -573,7 +590,14 @@ body {
     grid-template-columns: repeat(3, minmax(auto, 100%));
   }
 
+  .work-cards {
+    justify-content: space-between;
+    gap: 10px;
+  }
 
+  .work-card {
+    max-width: calc(33% - 10px);
+  }
 
 }
 
@@ -591,8 +615,8 @@ body {
   }
 
   .work-card {
-    min-width: 80%;
-    max-width: 90%;
+    min-width: 100%;
+    max-width: 100%;
     text-align: center;
   }
 

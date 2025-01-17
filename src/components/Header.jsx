@@ -73,7 +73,7 @@ export const Header = () => {
     return () => {
       window.removeEventListener("scroll", alterClassesOnScroll);
     };
-  }, [pathname]);
+  }, [pathname,alterClassesOnScroll]);
 
   return (
     <>
@@ -157,7 +157,7 @@ export const Header = () => {
               if (data.children) {
                 return (
                   <div className="sub-menu-items mobile">
-                    <p> <Link to={`/`}>{data.name}</Link></p>
+                    <p>{data.name}</p>
 
                     <div className="sub-menu mobile">
                       {data.children.map((childmenus, j) => {

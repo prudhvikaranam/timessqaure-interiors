@@ -2,7 +2,7 @@ export const navData = {
   header: {
     navlist: [
       { name: "Themes", id: "themes" },
-      { name: "Recent Projects", id: "recentProjects" },
+      { name: "Recent Projects", id: "projects" },
       {
         name: "Ideas", children: [
           { name: "Kitchen", id: "kitchen" },
@@ -15,7 +15,7 @@ export const navData = {
           { name: "Bar", id: "bar" }
         ]
       },
-      { name: "How we work", id: "ourWork" },
+      { name: "How we work", id: "weWork" },
       { name: "Interiors", id: "interiors" }
     ]
   }

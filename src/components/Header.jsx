@@ -1,15 +1,16 @@
 import logo from "../assets/images/logo.png";
 import { navData } from "../assets/data/data";
-import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import mail from "../assets/images/mail.png";
 import call from "../assets/images/call.png";
-
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showHamburgerMenu, setshowHamburgerMenu] = useState(false);
   let lastScrollY = window.scrollY;
+
+  const { pathname } = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,44 +18,62 @@ export const Header = () => {
   };
 
   const goToSection = (menuItem, device) => {
-    if (document.getElementById(menuItem)) {
-      const element = document.getElementById(menuItem);
-      window.scrollTo({
-        top: element.offsetTop - 100,
-        behavior: "smooth"
-      });
+    // if (document.getElementById(menuItem)) {
+    //   const element = document.getElementById(menuItem);
+    //   window.scrollTo({
+    //     top: element.offsetTop - 100,
+    //     behavior: "smooth"
+    //   });
 
-      if (device === "mobile") {
-        setIsMenuOpen(!isMenuOpen);
-        setshowHamburgerMenu(!isMenuOpen);
-      }
+    if (device === "mobile") {
+      setIsMenuOpen(!isMenuOpen);
+      setshowHamburgerMenu(!isMenuOpen);
     }
+    // }
   };
 
+  const alterClassesOnScroll = () => {
+    // console.log('Prudhvi !pathname.startsWith("/ideas/")', !pathname.startsWith("/ideas/"));
+    
+    if (pathname != "/weWork") {
+      const navbar = document.getElementById("navbar");
+      const totalNavItems = document.getElementById("totalNav-items");
 
-  window.addEventListener("scroll", function () {
-    const navbar = document.getElementById("navbar");
+      if (window.scrollY > lastScrollY) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+
+      if (window.scrollY > 110) {
+        navbar.classList.add("dark-bg");
+        totalNavItems.classList.add("dark-bg-menu-items");
+      } else {
+        navbar.classList.remove("dark-bg");
+        totalNavItems.classList.remove("dark-bg-menu-items");
+      }
+    }
+    lastScrollY = window.scrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", alterClassesOnScroll);
     const totalNavItems = document.getElementById("totalNav-items");
 
-
-    if (window.scrollY > lastScrollY) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-
-    if(window.scrollY > 110){
+    const navbar = document.getElementById("navbar");
+    if (pathname === "/weWork" || pathname.startsWith("/ideas/")) {
       navbar.classList.add("dark-bg");
       totalNavItems.classList.add("dark-bg-menu-items");
-      
-    }else{
+    } else {
       navbar.classList.remove("dark-bg");
       totalNavItems.classList.remove("dark-bg-menu-items");
 
     }
 
-    lastScrollY = window.scrollY;
-  });
+    return () => {
+      window.removeEventListener("scroll", alterClassesOnScroll);
+    };
+  }, [pathname]);
 
   return (
     <>
@@ -84,8 +103,6 @@ export const Header = () => {
               </div>
 
               <div className="menuitems-container">
-
-
                 <div
                   className="menu-items desktop font-size-14"
                   id="totalNav-items"
@@ -113,7 +130,7 @@ export const Header = () => {
                     } else {
                       return (
                         <p onClick={() => goToSection(data.id, "desktop")}>
-                          <Link to={`/`}>{data.name}</Link>
+                          <Link to={`/${data.id}`}>{data.name}</Link>
                         </p>
                       );
                     }
@@ -140,7 +157,7 @@ export const Header = () => {
               if (data.children) {
                 return (
                   <div className="sub-menu-items mobile">
-                    <p>{data.name}</p>
+                    <p> <Link to={`/`}>{data.name}</Link></p>
 
                     <div className="sub-menu mobile">
                       {data.children.map((childmenus, j) => {
@@ -165,9 +182,7 @@ export const Header = () => {
                       goToSection(data.id, "mobile");
                     }}
                   >
-                    <Link to={`/`} onClick={toggleMenu}>
-                      {data.name}
-                    </Link>
+                    <Link to={`/${data.id}`}>{data.name}</Link>
                   </p>
                 );
               }

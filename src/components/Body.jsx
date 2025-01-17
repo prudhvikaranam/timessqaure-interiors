@@ -487,6 +487,7 @@ export const BodyComponent = () => {
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 className="google-map-timesSquareInteriors"
+                title="google-map-ts"
               ></iframe>
             </div>
           </div>

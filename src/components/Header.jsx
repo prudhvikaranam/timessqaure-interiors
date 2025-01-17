@@ -35,7 +35,7 @@ export const Header = () => {
   const alterClassesOnScroll = () => {
     // console.log('Prudhvi !pathname.startsWith("/ideas/")', !pathname.startsWith("/ideas/"));
     
-    if (pathname != "/weWork") {
+    if (pathname !== "/weWork") {
       const navbar = document.getElementById("navbar");
       const totalNavItems = document.getElementById("totalNav-items");
 

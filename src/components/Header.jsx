@@ -73,7 +73,7 @@ export const Header = () => {
     return () => {
       window.removeEventListener("scroll", alterClassesOnScroll);
     };
-  }, [pathname,alterClassesOnScroll]);
+  }, [pathname]);
 
   return (
     <>

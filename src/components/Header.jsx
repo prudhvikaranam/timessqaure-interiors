@@ -32,31 +32,35 @@ export const Header = () => {
     // }
   };
 
-  const alterClassesOnScroll = () => {
-    // console.log('Prudhvi !pathname.startsWith("/ideas/")', !pathname.startsWith("/ideas/"));
-    
-    if (pathname !== "/weWork") {
-      const navbar = document.getElementById("navbar");
-      const totalNavItems = document.getElementById("totalNav-items");
 
-      if (window.scrollY > lastScrollY) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-
-      if (window.scrollY > 110) {
-        navbar.classList.add("dark-bg");
-        totalNavItems.classList.add("dark-bg-menu-items");
-      } else {
-        navbar.classList.remove("dark-bg");
-        totalNavItems.classList.remove("dark-bg-menu-items");
-      }
-    }
-    lastScrollY = window.scrollY;
-  };
 
   useEffect(() => {
+
+    const alterClassesOnScroll = () => {
+      // console.log('Prudhvi !pathname.startsWith("/ideas/")', !pathname.startsWith("/ideas/"));
+      
+      if (pathname !== "/weWork") {
+        const navbar = document.getElementById("navbar");
+        const totalNavItems = document.getElementById("totalNav-items");
+  
+        if (window.scrollY > lastScrollY) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+  
+        if (window.scrollY > 110) {
+          navbar.classList.add("dark-bg");
+          totalNavItems.classList.add("dark-bg-menu-items");
+        } else {
+          navbar.classList.remove("dark-bg");
+          totalNavItems.classList.remove("dark-bg-menu-items");
+        }
+      }
+      lastScrollY = window.scrollY;
+    };
+
+
     window.addEventListener("scroll", alterClassesOnScroll);
     const totalNavItems = document.getElementById("totalNav-items");
 

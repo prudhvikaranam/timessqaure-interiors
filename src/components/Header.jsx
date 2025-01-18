@@ -8,7 +8,6 @@ import call from "../assets/images/call.png";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showHamburgerMenu, setshowHamburgerMenu] = useState(false);
-  let lastScrollY = window.scrollY;
 
   const { pathname } = useLocation();
 
@@ -35,6 +34,7 @@ export const Header = () => {
 
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
 
     const alterClassesOnScroll = () => {
       // console.log('Prudhvi !pathname.startsWith("/ideas/")', !pathname.startsWith("/ideas/"));

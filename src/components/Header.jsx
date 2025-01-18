@@ -31,24 +31,22 @@ export const Header = () => {
     // }
   };
 
-
-
   useEffect(() => {
     let lastScrollY = window.scrollY;
 
     const alterClassesOnScroll = () => {
       // console.log('Prudhvi !pathname.startsWith("/ideas/")', !pathname.startsWith("/ideas/"));
-      
-      if (pathname !== "/weWork") {
-        const navbar = document.getElementById("navbar");
-        const totalNavItems = document.getElementById("totalNav-items");
-  
-        if (window.scrollY > lastScrollY) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-  
+
+      const navbar = document.getElementById("navbar");
+      const totalNavItems = document.getElementById("totalNav-items");
+
+      if (window.scrollY > lastScrollY) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+
+      if (pathname !== "/weWork" && !pathname.includes("/ideas")) {
         if (window.scrollY > 110) {
           navbar.classList.add("dark-bg");
           totalNavItems.classList.add("dark-bg-menu-items");
@@ -60,7 +58,6 @@ export const Header = () => {
       lastScrollY = window.scrollY;
     };
 
-
     window.addEventListener("scroll", alterClassesOnScroll);
     const totalNavItems = document.getElementById("totalNav-items");
 
@@ -71,7 +68,6 @@ export const Header = () => {
     } else {
       navbar.classList.remove("dark-bg");
       totalNavItems.classList.remove("dark-bg-menu-items");
-
     }
 
     return () => {

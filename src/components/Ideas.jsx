@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
+import { Footer } from "./footer";
 
 export const IdeaItems = () => {
   const { ideaRoom } = useParams();
@@ -27,27 +28,24 @@ export const IdeaItems = () => {
     ]
   };
 
-    useEffect(() => {
-      if (window.lightGallery) {
-        designer1galleryRef.current = window.lightGallery(
-          document.getElementById("ideas-gallery"),
-          {
-            download: false,
-            selector: "img",
-            closeOnOutside: true
-          }
-        );
-      }
-  
-      return () => {
-        if (designer1galleryRef.current) {
-          designer1galleryRef.current.destroy(true);
+  useEffect(() => {
+    if (window.lightGallery) {
+      designer1galleryRef.current = window.lightGallery(
+        document.getElementById("ideas-gallery"),
+        {
+          download: false,
+          selector: "img",
+          closeOnOutside: true
         }
-  
-       
-      };
-    }, []);
+      );
+    }
 
+    return () => {
+      if (designer1galleryRef.current) {
+        designer1galleryRef.current.destroy(true);
+      }
+    };
+  }, []);
 
   const filteredIdea = images[ideaRoom] || [];
 
@@ -75,7 +73,9 @@ export const IdeaItems = () => {
               })
             : "Interiors for selected Ideas are loading"}
         </div>
+
       </div>
+        <Footer />
     </>
   );
 };

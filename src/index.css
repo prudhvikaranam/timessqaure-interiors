@@ -460,6 +460,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 
 .ideas-container {
@@ -841,6 +842,7 @@ button {
 
   .address-container {
     flex-direction: column;
+    justify-self: c;
   }
 
 

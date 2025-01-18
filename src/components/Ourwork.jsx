@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Footer } from "./footer";
 
 export const OurWork = () => {

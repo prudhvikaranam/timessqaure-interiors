@@ -8,7 +8,7 @@ import project_5 from "../assets/images/project-5.jpeg";
 import user1 from "../assets/images/user1.png";
 import user2 from "../assets/images/user2.jpg";
 import whyus from "../assets/images/whyus.png";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Footer } from "./footer";
 import { Link } from "react-router-dom";
 

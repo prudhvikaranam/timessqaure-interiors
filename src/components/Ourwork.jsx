@@ -3,14 +3,6 @@ import { Footer } from "./footer";
 
 export const OurWork = () => {
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  
-  const toggleModal = () => setIsModalOpen(!isModalOpen);
-
-  const onFormSubmit = () => {
-    console.log("Prudhvi", document.getElementById("dropdown").value);
-  };
-
   return (
     <>
       <div className="ourword-main-container">

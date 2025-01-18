@@ -10,6 +10,7 @@ import user2 from "../assets/images/user2.jpg";
 import whyus from "../assets/images/whyus.png";
 import { useEffect, useRef, useState } from "react";
 import { Footer } from "./footer";
+import { Link } from "react-router-dom";
 
 export const BodyComponent = () => {
   const designer1galleryRef = useRef(null);
@@ -46,8 +47,6 @@ export const BodyComponent = () => {
       }
     };
   }, []);
-
- 
 
   return (
     <>
@@ -280,6 +279,10 @@ export const BodyComponent = () => {
               </div>
             </div>
           </div>
+
+          <button>
+            <Link to={"/projects"}>View More</Link>
+          </button>
         </div>
 
         <div className="whyUs-container pd-tb-80-rl-40">

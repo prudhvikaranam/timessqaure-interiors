@@ -46,7 +46,7 @@ export const Header = () => {
         navbar.classList.remove("scrolled");
       }
 
-      if (pathname !== "/weWork" && !pathname.includes("/ideas")) {
+      if (pathname !== "/weWork" && !pathname.includes("/ideas") && !pathname.includes('/projects') && !pathname.startsWith("/themes")) {
         if (window.scrollY > 110) {
           navbar.classList.add("dark-bg");
           totalNavItems.classList.add("dark-bg-menu-items");
@@ -62,13 +62,16 @@ export const Header = () => {
     const totalNavItems = document.getElementById("totalNav-items");
 
     const navbar = document.getElementById("navbar");
-    if (pathname === "/weWork" || pathname.startsWith("/ideas/")) {
+    if (pathname === "/weWork" || pathname.startsWith("/ideas/") || pathname.startsWith("/projects") || pathname.startsWith("/themes")) {
       navbar.classList.add("dark-bg");
       totalNavItems.classList.add("dark-bg-menu-items");
     } else {
       navbar.classList.remove("dark-bg");
       totalNavItems.classList.remove("dark-bg-menu-items");
     }
+
+
+    window.scrollTo(0, 0);
 
     return () => {
       window.removeEventListener("scroll", alterClassesOnScroll);

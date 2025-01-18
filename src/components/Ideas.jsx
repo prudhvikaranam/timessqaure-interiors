@@ -52,7 +52,9 @@ export const IdeaItems = () => {
   return (
     <>
       <div className="ideas-hero-container">
-        <h3 className="mr-tb-40 ">
+        <h1 className="font-size-24 fw-100 mr-tb-30 we-work">BEDROOM</h1>
+
+        <h3 className="mr-b-40 ">
           We provide wide range of bedroom Interiors.
         </h3>
         <p>Choose from the wide range of interiors</p>
@@ -73,9 +75,8 @@ export const IdeaItems = () => {
               })
             : "Interiors for selected Ideas are loading"}
         </div>
-
       </div>
-        <Footer />
+      <Footer />
     </>
   );
 };

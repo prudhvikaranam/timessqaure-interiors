@@ -6,6 +6,7 @@ import { Header } from "./Header";
 import { IdeaItems } from "./Ideas";
 import { Projects } from "./Projects";
 import { OurWork } from "./Ourwork";
+import { Themes } from "./Themes";
 
 const routes = createBrowserRouter([
   {
@@ -17,9 +18,11 @@ const routes = createBrowserRouter([
         element: <Header />,
         children: [
           { path: "/", element: <BodyComponent /> },
-          { path: "/projects", element: <Projects /> },
+          { path: "projects", element: <Projects /> },
           { path: "ideas/:ideaRoom", element: <IdeaItems /> },
-          { path: "wework", element: <OurWork /> }
+          { path: "wework", element: <OurWork /> },
+          { path: "themes", element: <Themes /> }
+
 
         ]
       }

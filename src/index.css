@@ -506,7 +506,8 @@ body {
   justify-content: center;
 }
 
-.contactUs-container button {
+.contactUs-container button,
+.our-projects-container button {
   padding: 10px 40px;
   background-color: var(--primarry-color);
   border: none;
@@ -520,7 +521,26 @@ body {
   margin: 0px auto;
 }
 
+.our-projects-container button {
+  position: static;
+  display: flex;
+}
 
+.our-projects-container button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.our-main-projects-container {
+  background-color: white;
+  padding: 20px 5%;
+}
+
+.themes-main-container {
+  background-color: white;
+  padding: 20px 5%;
+}
 
 /* for Contact form */
 
@@ -552,16 +572,12 @@ body {
 
 .close-btn {
   position: absolute;
-  top: -20px;
-  /* Adjust this to position closer to the top */
-  right: -20px;
-  /* Adjust this to position closer to the right */
+  top: 15px;
+  right: 15px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /* This makes it circular */
   background-color: #333;
-  /* Dark background color */
   color: white;
   font-size: 20px;
   display: flex;
@@ -570,7 +586,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 5px;
-  border: 5px solid white;
+  border: 2px solid white;
 }
 
 .close-btn:hover {
@@ -838,6 +854,9 @@ button {
 
   .modal-content {
     width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .address-container {

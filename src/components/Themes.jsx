@@ -46,7 +46,7 @@ export const Themes = () => {
             return (
               <div className="swiper">
                 <div className="swiper-wrapper">
-                  {data.theme.map((images) => {
+                  {data.theme.map((images,i) => {
                     return (
                       <a
                         href={require(`../assets/images/${images}.jpeg`)}
@@ -55,7 +55,7 @@ export const Themes = () => {
                         <img
                           src={require(`../assets/images/${images}.jpeg`)}
                           className="swiper-slide"
-                          alt="image"
+                          alt={`themes-${i}`}
                         />
                       </a>
                     );

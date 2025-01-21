@@ -388,7 +388,8 @@ body {
 .project-designer {
   width: 70%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project-designer .rt-c {
@@ -396,7 +397,7 @@ body {
 }
 
 .project-designer .rt-c img {
-  width: 50%;
+  width: 100%;
   height: auto;
   border-radius: 50%;
   aspect-ratio: 1 / 1;
@@ -519,6 +520,7 @@ body {
   position: fixed;
   bottom: 0;
   margin: 0px auto;
+  z-index: 11000;
 }
 
 .our-projects-container button {
@@ -705,6 +707,34 @@ button {
 }
 
 
+
+/* Swiper */
+
+.image-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.swiper {
+  width: 30%;
+  min-width: 40%;
+  max-width: 42%;
+  aspect-ratio: 3 / 2;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #dfd9d9;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bolder;
+}
 
 /* Media queries */
 
@@ -981,6 +1011,21 @@ button {
   .our-main-projects-container {
     padding: 20px 10%;
   }
+
+
+  .address-container .address-landmark {
+    margin: 0px 0px 50px 0px;
+  }
+
+
+  .swiper {
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+    aspect-ratio: 3.5 / 2;
+  }
+
+
 }
 
 

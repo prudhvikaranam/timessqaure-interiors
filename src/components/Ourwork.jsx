@@ -1,7 +1,6 @@
 import { Footer } from "./footer";
 
 export const OurWork = () => {
-
   return (
     <>
       <div className="ourword-main-container">
@@ -14,9 +13,9 @@ export const OurWork = () => {
           eam.
         </p>
 
-        <div class="work-timeline timeline">
-          <div class="container right">
-            <div class="content">
+        <div className="work-timeline timeline">
+          <div className="container right">
+            <div className="content">
               <h2 className="font-size-14 prim-color">WE DESIGN</h2>
               <p className="font-size-12 mr-tb-20">
                 Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
@@ -26,8 +25,8 @@ export const OurWork = () => {
               </p>
             </div>
           </div>
-          <div class="container right">
-            <div class="content">
+          <div className="container right">
+            <div className="content">
               <h2 className="font-size-14 prim-color">YOU VISUALIZE</h2>
               <p className="font-size-12 mr-tb-20">
                 Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
@@ -37,8 +36,8 @@ export const OurWork = () => {
               </p>
             </div>
           </div>
-          <div class="container right">
-            <div class="content">
+          <div className="container right">
+            <div className="content">
               <h2 className="font-size-14 prim-color">WE IMPLEMENT</h2>
               <p className="font-size-12 mr-tb-20">
                 Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
@@ -48,8 +47,8 @@ export const OurWork = () => {
               </p>
             </div>
           </div>
-          <div class="container right">
-            <div class="content">
+          <div className="container right">
+            <div className="content">
               <h2 className="font-size-14 prim-color">Take over</h2>
               <p className="font-size-12 mr-tb-20">
                 Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
@@ -62,10 +61,7 @@ export const OurWork = () => {
         </div>
       </div>
 
-
-      <Footer/>
-
-      
+      <Footer />
     </>
   );
 };

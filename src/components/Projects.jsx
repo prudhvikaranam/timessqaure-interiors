@@ -46,14 +46,14 @@ export const Projects = () => {
             </div>
 
             <div className="hidden-images">
-              <img src={project_1} alt="project" className="image image-1" />
-              <img src={project_1} alt="project" className="image image-1" />
-              <img src={project_1} alt="project" className="image image-1" />
-              <img src={project_1} alt="project" className="image image-1" />
-              <img src={project_1} alt="project" className="image image-1" />
-              <img src={project_1} alt="project" className="image image-1" />
-              <img src={project_1} alt="project" className="image image-1" />
-              <img src={project_1} alt="project" className="image image-1" />
+              <img src={project_1} alt="project" className="image image-4" />
+              <img src={project_1} alt="project" className="image image-5" />
+              <img src={project_1} alt="project" className="image image-6" />
+              <img src={project_1} alt="project" className="image image-7" />
+              <img src={project_1} alt="project" className="image image-8" />
+              <img src={project_1} alt="project" className="image image-9" />
+              <img src={project_1} alt="project" className="image image-10" />
+              <img src={project_1} alt="project" className="image image-11" />
             </div>
           </div>
 

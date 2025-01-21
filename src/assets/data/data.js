@@ -1,6 +1,7 @@
 export const navData = {
   header: {
     navlist: [
+      { name: "Home", id: "" },
       { name: "Themes", id: "themes" },
       { name: "Recent Projects", id: "projects" },
       {
@@ -16,7 +17,15 @@ export const navData = {
         ]
       },
       { name: "How we work", id: "weWork" },
-      { name: "Interiors", id: "interiors" }
+      { name: "Interiors", id: "" }
     ]
-  }
+  },
+
+
+  themes: [
+    { theme: ['project-1', 'project-2', 'project-3'] },
+    { theme: ['project-4', 'project-5', 'project-6'] },
+    { theme: ['project-6', 'project-2', 'project-1'] },
+    { theme: ['project-6', 'project-2', 'project-1'] }
+  ]
 };

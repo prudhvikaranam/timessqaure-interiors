@@ -9,6 +9,9 @@ body {
 
 :root {
   --primarry-color: #dc1746;
+  --font-primary-family: "Varela Round", sans-serif;
+  --font-secondary-family: "Raleway", serif;
+
 }
 
 
@@ -62,7 +65,7 @@ body {
 
 
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: var(--font-primary-family);
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -267,19 +270,18 @@ body {
 }
 
 .body-container {
-  height: calc(100vh - 85px);
-
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   color: white;
+  height: 100vh;
+  margin: -85px 0px 0px;
 }
 
 .body-container h1 {
   font-size: 3vw;
   font-weight: initial;
-  padding: 10% 0px 0px 0px;
 }
 
 .body-icon {
@@ -318,7 +320,8 @@ body {
 .work-card p {
   margin-top: auto;
   margin-bottom: auto;
-
+  font-family: var(--font-secondary-family);
+  letter-spacing: 0.5px;
 }
 
 .work-card img {
@@ -334,8 +337,51 @@ body {
   color: white;
 }
 
-/* For Projects */
 
+
+/* For Themes */
+
+
+.themes-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-container {
+  width: 40%;
+  position: relative;
+}
+
+
+.image-container img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.image-container:hover img {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.image-container .theme-name {
+  position: absolute;
+  z-index: 1000;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 10px 0px;
+}
+
+/* For Projects */
+.our-themes-container,
 .our-projects-container,
 .customers-container,
 .ourPartners-container {
@@ -481,19 +527,31 @@ body {
 
 .address-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .address-container .address-landmark {
-  width: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .address-container .address-map {
-  width: 50%;
+  width: 30%;
 }
 
 .address-map .google-map-timesSquareInteriors {
   width: 100%;
+}
+
+.fa.fa-map-marker {
+  font-size: 25px;
+}
+
+.follow-icons {
+  font-size: 25px;
+  margin: 0px 10px 0px 0px;
 }
 
 
@@ -508,6 +566,7 @@ body {
 }
 
 .contactUs-container button,
+.our-themes-container button,
 .our-projects-container button {
   padding: 10px 40px;
   background-color: var(--primarry-color);
@@ -523,12 +582,14 @@ body {
   z-index: 11000;
 }
 
+.our-themes-container button,
 .our-projects-container button {
   position: static;
   display: flex;
 }
 
-.our-projects-container button a {
+.our-projects-container button a,
+.our-themes-container button a {
   color: white;
   text-decoration: none;
   font-weight: 100;
@@ -551,7 +612,7 @@ body {
 
 .themes-main-container {
   background-color: white;
-  padding: 20px 5%;
+  padding: 20px 15%;
 }
 
 /* for Contact form */
@@ -715,13 +776,16 @@ button {
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .swiper {
-  width: 30%;
-  min-width: 40%;
-  max-width: 42%;
+  width: calc(50% - 20px);
   aspect-ratio: 3 / 2;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -736,16 +800,34 @@ button {
   font-weight: bolder;
 }
 
+
+
+
+.contact-whatsApp {
+  width: 110px;
+  position: fixed;
+  bottom: 200px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px 15px 10px 38px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.contact-whatsApp .whatsApp-image {
+  width: 100%;
+}
+
+
+
+
 /* Media queries */
 
 
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 991px) {
 
   /* for Headers component */
 
-  .body-container h1 {
-    padding: 20% 0px 0px 0px;
-  }
+
 
   .menu-contact-details {
     display: none;
@@ -846,6 +928,14 @@ button {
 
   /* for Headers component */
 
+  .mobile-menu-items .mobile-contact-detail {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+
+
 }
 
 
@@ -930,8 +1020,8 @@ button {
   }
 
 
-  .project-container .images-container .right-container img,
-  .project-container .images-container .left-container img {
+  .project-container .images-container .right-container a .image,
+  .project-container .images-container .left-container a .image {
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }
@@ -1019,12 +1109,22 @@ button {
 
 
   .swiper {
-    width: 80%;
-    min-width: 80%;
-    max-width: 80%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     aspect-ratio: 3.5 / 2;
   }
 
+
+
+  .contact-whatsApp {
+    width: 85px;
+    padding: 10px 15px 10px 25px;
+  }
+
+  .project-designer .rt-c {
+    width: 30%;
+  }
 
 }
 
@@ -1099,6 +1199,12 @@ h3::after {
 .font-size-14 {
   font-size: 14px !important;
 }
+
+
+.font-size-15 {
+  font-size: 15px !important;
+}
+
 
 .font-size-16 {
   font-size: 16px !important;
@@ -1279,4 +1385,8 @@ h3::after {
   .ourword-main-container .right {
     left: 0%;
   }
+}
+
+p {
+  font-family: var(--font-secondary-family);
 }

@@ -4,13 +4,17 @@ import project_2 from "../assets/images/project-2.jpeg";
 import project_3 from "../assets/images/project-3.jpeg";
 import project_4 from "../assets/images/project-4.jpeg";
 import project_5 from "../assets/images/project-5.jpeg";
-// import project_6 from "../assets/images/project-6.jpeg";
 import user1 from "../assets/images/user1.png";
 import user2 from "../assets/images/user2.jpg";
 import whyus from "../assets/images/whyus.png";
 import { useEffect, useRef } from "react";
 import { Footer } from "./footer";
 import { Link } from "react-router-dom";
+import whatsApp from "../assets/images/whatsApp.png";
+import theme1 from "../assets/images/project-6.jpeg";
+import theme2 from "../assets/images/bedroom_1_3.jpeg";
+import theme3 from "../assets/images/bedroom_1_9.jpeg";
+import theme4 from "../assets/images/bedroom_1_12.jpeg";
 
 export const BodyComponent = () => {
   const designer1galleryRef = useRef(null);
@@ -98,6 +102,12 @@ export const BodyComponent = () => {
         </svg> */}
       </div>
 
+
+      <div className="contact-whatsApp">
+        <img src={whatsApp} alt="whatsApps-icon" className="whatsApp-image" />
+      </div>
+
+
       <div className="sections-container">
         <div className="our-work-container pd-tb-80-rl-40" id="ourWork">
           <h3 className=" text-align-c">HOW WE WORK</h3>
@@ -109,33 +119,72 @@ export const BodyComponent = () => {
               <p className="font-size-20 ">WE DESIGN</p>
 
               <img src={workDesign} alt="work-icon" className="work-icon" />
-              <p>
-                <span className="prim-color font-b">01.</span>
+              <p className="font-size-16">
+                <span className="prim-color font-b font-size-20">01.</span>&nbsp;
                 Book a design consultation with some of Hyderabad's best
                 designers. Get your home designed for the dreams of tomorrow
               </p>
             </div>
             <div className="work-card">
-              <p className="font-size-20 ">YOU VISUALIZE</p>
+              <p className="font-size-20 ">YOU VISUALIZE</p>&nbsp;
 
               <img src={workDesign} alt="work-icon" className="work-icon" />
-              <p>
-                <span className="prim-color font-b">02.</span>See your home in
+              <p className="font-size-16">
+                <span className="prim-color font-b  font-size-20">02.</span>&nbsp;See your home in
                 every angle and “try before you buy” furniture, using our
                 Virtual Reality walkthrough
               </p>
             </div>
             <div className="work-card">
-              <p className="font-size-20 ">WE IMPLEMENT</p>
+              <p className="font-size-20 ">WE IMPLEMENT</p>&nbsp;
               <img src={workDesign} alt="work-icon" className="work-icon" />
-              <p>
-                <span className="prim-color font-b">03.</span>
+              <p className="font-size-16">
+                <span className="prim-color font-b  font-size-20">03.</span>&nbsp;
                 Sit back & Relax. In just 60 days, an army of experts will make
                 the Virtual Reality a glorious reality
               </p>
             </div>
           </div>
         </div>
+
+
+        <div
+          className="our-themes-container pd-tb-80-rl-40"
+          id="designThemes"
+        >
+          <h3 className="text-align-c clg-pri"> DESIGN THEMES</h3>
+          <p className="mr-tb-30 text-align-c">
+            Designing your newly-bought home has never been this simple before.
+          </p>
+
+
+          <div className="themes-images-container mr-tb-40">
+            <div className="image-container">
+              <img src={theme1} alt='themes-image' />
+              <p className="theme-name">THEME ONE</p>
+            </div>
+            <div className="image-container">
+
+              <img src={theme2} alt='themes-image' />
+              <p className="theme-name">THEME TWO</p>
+            </div>
+            <div className="image-container">
+
+              <img src={theme3} alt='themes-image' />
+              <p className="theme-name">THEME THREE</p>
+            </div>
+            <div className="image-container">
+              <img src={theme4} alt='themes-image' />
+              <p className="theme-name">THEME FOUR</p>
+            </div>
+          </div>
+          <button>
+            <Link to={"/themes"}>View More</Link>
+          </button>
+        </div>
+
+
+
 
         <div
           className="our-projects-container pd-tb-80-rl-40"

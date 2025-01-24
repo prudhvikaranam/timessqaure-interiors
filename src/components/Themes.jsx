@@ -36,8 +36,8 @@ export const Themes = () => {
 
   return (
     <>
-      <div className="themes-main-container">
-        <h1 className="font-size-24 fw-100 we-work">
+      <div className="themes-main-container ">
+        <h1 className="font-size-20 fw-100 we-work mr-tb-30">
           START WITH OUR DESIGN THEMES
         </h1>
 

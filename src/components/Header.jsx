@@ -1,6 +1,6 @@
 import logo from "../assets/images/logo.png";
 import { navData } from "../assets/data/data";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import mail from "../assets/images/mail.png";
 import call from "../assets/images/call.png";
@@ -8,7 +8,8 @@ import call from "../assets/images/call.png";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showHamburgerMenu, setshowHamburgerMenu] = useState(false);
-
+  const menuRef = useRef(null);
+  const hamburgerRef = useRef(null);
   const { pathname } = useLocation();
 
   const toggleMenu = () => {
@@ -32,11 +33,19 @@ export const Header = () => {
   };
 
   useEffect(() => {
+
+    const handleClick = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target) && !hamburgerRef.current.contains(e.target)) {
+        setshowHamburgerMenu(false);
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClick);
+
     let lastScrollY = window.scrollY;
 
     const alterClassesOnScroll = () => {
-      // console.log('Prudhvi !pathname.startsWith("/ideas/")', !pathname.startsWith("/ideas/"));
-
       const navbar = document.getElementById("navbar");
       const totalNavItems = document.getElementById("totalNav-items");
 
@@ -75,6 +84,7 @@ export const Header = () => {
 
     return () => {
       window.removeEventListener("scroll", alterClassesOnScroll);
+      document.removeEventListener("click", handleClick);
     };
   }, [pathname]);
 
@@ -93,14 +103,14 @@ export const Header = () => {
             <div className="navbar-left desktop">
               <div className="menu-contact-details">
                 <a href="mailto:Sample@test.com" className="contact-link">
-                  <img src={mail} alt="mail" />
+                  <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
                   Sample@test.com
                 </a>
                 <a
                   className="prim-color fw-100 contact-link"
                   href="tel:+91 9849446023"
                 >
-                  <img src={call} alt="call" />
+                  <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;
                   +91 9849446023
                 </a>
               </div>
@@ -146,6 +156,7 @@ export const Header = () => {
               className={`hamburger-container ${isMenuOpen && "mobileView"}`}
               onClick={toggleMenu}
               id="hamburger-container"
+              ref={hamburgerRef}
             >
               <div className="bar1"></div>
               <div className="bar2"></div>
@@ -155,7 +166,19 @@ export const Header = () => {
         </div>
 
         {showHamburgerMenu && (
-          <div className="mobile-menu-items" id="mobile-menu-items">
+          <div className="mobile-menu-items" id="mobile-menu-items" ref={menuRef}>
+            <p className="mobile-contact-detail font-prim">
+              <a href="mailto:Sample@test.com" className="prim-color">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;EMAIL US
+              </a>
+
+              <a
+                className="prim-color fw-100 contact-link"
+                href="tel:+91 9849446023"
+              >
+                <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;CALL US
+              </a>
+            </p>
             {navData.header.navlist.map((data) => {
               if (data.children) {
                 return (
@@ -197,3 +220,29 @@ export const Header = () => {
     </>
   );
 };
+
+
+
+// Transforming spaces, enriching lives—where every detail speaks your style.
+
+
+// "Design is not just what it looks like, it's how it feels."
+// – Inspired by Steve Jobs, this quote highlights the emotional impact of design.
+
+// "Where beauty meets functionality, your perfect space is born."
+// – A balance between aesthetics and practicality.
+
+// "Every home tells a story—let us help you write yours."
+// – Emphasizes personal style and storytelling through design.
+
+// "Spaces crafted with care, designed for life."
+// – A warm, inviting message that highlights attention to detail and usability.
+
+// "Creating rooms that reflect your essence, and elevate your every day."
+// – This one speaks to the deep personalization that good interior design brings.
+
+// "Elegance is not about being noticed, it’s about being remembered."
+// – A subtle, refined message for those seeking timeless, memorable interiors.
+
+// "A well-designed space is a reflection of the soul."
+// – Emphasizes how design mirrors one's personality and spirit.

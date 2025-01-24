@@ -20,15 +20,35 @@ export const Footer = () => {
 
         <div className="address-container">
           <div className="address-landmark font-color-white">
-            Test Apartments INC.<br /> 4th Floor, 5th Block <br />
-            Rai Durgam, Hyderabad - 500000
+
+            <p className="mr-b-15">
+              Leading Interior Decorators and Interior designers in Hyderabad, started by a group of passionate interior designers, interior decorators, interior architects. With more than 15+ years of interior desiging expertise.
+            </p>
+
+            <p className="mr-b-15">
+              Follow Us<br/>
+              <i class="fa fa-facebook-official follow-icons" aria-hidden="true"></i>
+              <i class="fa fa-instagram follow-icons" aria-hidden="true"></i>
+              <i class="fa fa-twitter-square follow-icons" aria-hidden="true"></i>
+
+            </p>
+
+
+
+            <p className="mr-b-15">
+              <i className="fa fa-map-marker prim-color" aria-hidden="true"></i>&nbsp;Sunshine Residency, B-Block, Flat No: 204, Janardhan Hills, Gachibowli, Hyderabad - 500081
+            </p>
           </div>
 
           <div className="address-map">
+
+
+
+
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.366718522326!2d78.37460807331928!3d17.44215340122879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93001b75ba2b%3A0x72aef5ac3f2e4e9a!2sRaidurg%20Metro%20Station!5e0!3m2!1sen!2sin!4v1736965273881!5m2!1sen!2sin"
-              width="600"
-              height="450"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.886622657352!2d78.35081355177586!3d17.437125222590282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93eee0b0e2df%3A0x6a99f427594b5058!2sSunshine%20Residency!5e0!3m2!1sen!2sin!4v1737707599228!5m2!1sen!2sin"
+              width="300"
+              height="300"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

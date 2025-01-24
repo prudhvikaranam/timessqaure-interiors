@@ -2,8 +2,6 @@ import logo from "../assets/images/logo.png";
 import { navData } from "../assets/data/data";
 import { useEffect, useRef, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
-import mail from "../assets/images/mail.png";
-import call from "../assets/images/call.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

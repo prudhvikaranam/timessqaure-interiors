@@ -823,7 +823,7 @@ button {
 .contact-whatsApp {
   width: 110px;
   position: fixed;
-  bottom: 0px;
+  bottom: 40px;
   right: 0px;
   background: rgba(255, 255, 255, 0.3);
   padding: 10px 15px 10px 38px;

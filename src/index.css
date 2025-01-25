@@ -656,6 +656,8 @@ body {
   border-radius: 8px;
   position: relative;
   width: 55%;
+  max-height: 80vh; /* Max height set to 80% of the viewport height */
+  overflow-y: auto; /* Allow vertical scrolling */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.5);
 }
@@ -677,13 +679,13 @@ body {
   cursor: pointer;
   padding: 5px;
   border: 2px solid white;
+  z-index: 1000; /* Ensure the close button is above other content */
 }
 
 .close-btn:hover {
   background-color: #f00;
   /* Red background when hovered */
 }
-
 
 .contact-form {
   display: flex;
@@ -711,7 +713,15 @@ button {
   background-color: var(--primarry-color);
 }
 
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%; /* Make the modal content take up 90% of the screen width on smaller screens */
+  }
 
+  .contact-form {
+    gap: 15px; /* Reduce the gap between form elements */
+  }
+}
 
 
 
@@ -1076,8 +1086,7 @@ button {
 
   .modal-content {
     width: 90%;
-    height: 90%;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
   }
 

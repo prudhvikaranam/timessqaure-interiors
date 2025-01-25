@@ -26,7 +26,7 @@ export const Footer = () => {
             </p>
 
             <p className="mr-b-15">
-              Follow Us<br/>
+              Follow Us  &nbsp;&nbsp;&nbsp;
               <i class="fa fa-facebook-official follow-icons" aria-hidden="true"></i>
               <i class="fa fa-instagram follow-icons" aria-hidden="true"></i>
               <i class="fa fa-twitter-square follow-icons" aria-hidden="true"></i>

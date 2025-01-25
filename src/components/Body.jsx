@@ -58,7 +58,7 @@ export const BodyComponent = () => {
       <div className="body-container">
         <h1>Transforming Spaces, Elevating Lifestyles</h1>
         {/* <h1>Spaces Crafted for the Future</h1> */}
-    
+
         <svg
           id="Capa_1"
           x="0px"
@@ -92,7 +92,9 @@ export const BodyComponent = () => {
 
 
       <div className="contact-whatsApp">
-        <img src={whatsApp} alt="whatsApps-icon" className="whatsApp-image" />
+        <a href="https://wa.me/+919849446023" target="_blank">
+          <img src={whatsApp} alt="whatsApps-icon" className="whatsApp-image" />
+        </a>
       </div>
 
 

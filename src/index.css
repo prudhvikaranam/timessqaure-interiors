@@ -823,11 +823,12 @@ button {
 .contact-whatsApp {
   width: 110px;
   position: fixed;
-  bottom: 200px;
+  bottom: 0px;
   right: 0px;
   background: rgba(255, 255, 255, 0.3);
   padding: 10px 15px 10px 38px;
   border-radius: 5px 0px 0px 5px;
+  z-index: 10000;
 }
 
 .contact-whatsApp .whatsApp-image {
@@ -1033,13 +1034,13 @@ button {
   }
 
   .project-container .images-container .left-container {
-    width: calc(50% - 10px);
+    width: calc(100% - 20px);
   }
 
 
   .project-container .images-container .right-container a .image,
   .project-container .images-container .left-container a .image {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 2 / 1;
     object-fit: cover;
   }
 
@@ -1141,6 +1142,14 @@ button {
 
   .project-designer .rt-c {
     width: 30%;
+  }
+
+  .themes-images-container{
+    flex-direction: column;
+  }
+
+  .image-container{
+    width: 100%;
   }
 
 }

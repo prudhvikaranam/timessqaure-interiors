@@ -863,9 +863,9 @@ button {
   .mobile-menu-items {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     background-color: whitesmoke;
-    padding: 0px 50px;
+    padding: 0px 15px;
     color: black;
     position: absolute;
     top: 85px;

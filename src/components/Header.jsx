@@ -171,7 +171,7 @@ export const Header = () => {
               </a>
 
               <a
-                className="prim-color fw-100 contact-link"
+                className="prim-color contact-link"
                 href="tel:+91 9849446023"
               >
                 <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;CALL US

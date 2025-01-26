@@ -11,7 +11,7 @@ import project_9 from "../assets/images/project-9.jpeg";
 
 
 import user1 from "../assets/images/user1.png";
-import user2 from "../assets/images/user2.jpg";
+import user2 from "../assets/images/user2.jpeg";
 import whyus from "../assets/images/whyus.png";
 import { useEffect, useRef } from "react";
 import { Footer } from "./footer";

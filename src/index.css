@@ -278,6 +278,7 @@ body {
 
 
 .app-container {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/images/homebg.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/images/homebg.jpg');
   background-size: cover;
   background-position: center;

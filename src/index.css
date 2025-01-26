@@ -436,7 +436,7 @@ body {
 .project-container .images-container .right-container a .image {
   width: 100%;
   height: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2.5;
   object-fit: cover;
 }
 
@@ -1052,7 +1052,7 @@ button {
 
   .project-container .images-container .right-container a .image,
   .project-container .images-container .left-container a .image {
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 1;
     object-fit: cover;
   }
 

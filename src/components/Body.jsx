@@ -36,11 +36,11 @@ import project_1_14 from "../assets/images/projects/projects-1/project_1_14.jpeg
 
 
 
+// designers
 
+import chandu from "../assets/images/designers/chandu.jpeg";
+import swati from "../assets/images/designers/swati.jpeg";
 
-import user1 from "../assets/images/chandu.jpeg";
-import user2 from "../assets/images/user2.jpeg";
-import whyus from "../assets/images/whyus.png";
 import { useEffect, useRef } from "react";
 import { Footer } from "./footer";
 import { Link } from "react-router-dom";
@@ -49,6 +49,25 @@ import theme1 from "../assets/images/project-6.jpeg";
 import theme2 from "../assets/images/bedroom_1_3.jpeg";
 import theme3 from "../assets/images/bedroom_1_9.jpeg";
 import theme4 from "../assets/images/bedroom_1_12.jpeg";
+
+// whyus images
+import vrBox from '../assets/images/whyUs/vrBox.png'
+import appHome from '../assets/images/whyUs/appHome.png'
+import impeccable from '../assets/images/whyUs/impeccable.png'
+import partners from '../assets/images/whyUs/partners.png'
+import prices from '../assets/images/whyUs/prices.png'
+import warranty from '../assets/images/whyUs/warranty.png'
+import whyus from "../assets/images/whyUs/whyus.png";
+import built from "../assets/images/whyUs/built.png";
+
+// we work
+import designwedo from "../assets/images/ourprocess/design.png";
+import wedesign from "../assets/images/ourprocess/wedesign.jpg";
+import visualize from "../assets/images/ourprocess/visualize.png";
+import implementationImage from "../assets/images/ourprocess/implementationImage.gif";
+
+
+
 
 export const BodyComponent = () => {
   const designer1galleryRef = useRef(null);
@@ -142,7 +161,7 @@ export const BodyComponent = () => {
             <div className="work-card">
               <p className="font-size-20 ">WE DESIGN</p>
 
-              <img src={workDesign} alt="work-icon" className="work-icon" />
+              <img src={wedesign} alt="work-icon" className="work-icon" />
               <p className="font-size-16">
                 <span className="prim-color font-b font-size-20">01.</span>&nbsp;
                 Book a design consultation with some of Hyderabad's best
@@ -152,20 +171,20 @@ export const BodyComponent = () => {
             <div className="work-card">
               <p className="font-size-20 ">YOU VISUALIZE</p>&nbsp;
 
-              <img src={workDesign} alt="work-icon" className="work-icon" />
+              <img src={visualize} alt="work-icon" className="work-icon" />
               <p className="font-size-16">
                 <span className="prim-color font-b  font-size-20">02.</span>&nbsp;See your home in
                 every angle and “try before you buy” furniture, using our
-                Virtual Reality walkthrough
+                Virtual Reality walkthrough.
               </p>
             </div>
             <div className="work-card">
               <p className="font-size-20 ">WE IMPLEMENT</p>&nbsp;
-              <img src={workDesign} alt="work-icon" className="work-icon" />
+              <img src={implementationImage} alt="work-icon" className="work-icon" />
               <p className="font-size-16">
                 <span className="prim-color font-b  font-size-20">03.</span>&nbsp;
                 Sit back & Relax. In just 60 days, an army of experts will make
-                the Virtual Reality a glorious reality
+                the Virtual Reality a glorious reality.
               </p>
             </div>
           </div>
@@ -224,7 +243,7 @@ export const BodyComponent = () => {
               <div className="right-container">
 
 
-              <a href={project_1_1}>
+                <a href={project_1_1}>
                   <img
                     src={project_1_1}
                     alt="project"
@@ -418,7 +437,7 @@ export const BodyComponent = () => {
             </div>
             <div className="project-designer mr-tb-40">
               <div className="rt-c">
-                <img src={user1} alt="designer" className="mr-tb-10" />
+                <img src={chandu} alt="designer" className="mr-tb-10" />
               </div>
               <div className="lt-c">
                 <div className="project-designer-about mr-tb-10">
@@ -497,7 +516,7 @@ export const BodyComponent = () => {
             </div>
             <div className="project-designer mr-tb-40">
               <div className="rt-c">
-                <img src={user2} alt="designer" className="mr-tb-10" />
+                <img src={swati} alt="designer" className="mr-tb-10" />
               </div>
               <div className="lt-c">
                 <div className="project-designer-about mr-tb-10">
@@ -525,8 +544,8 @@ export const BodyComponent = () => {
 
           <div className="whyUs-Details-container">
             <div className="container">
-              <img src={whyus} alt="" />
-              <h4 className="heading-section prim-color mr-tb-20">
+              <img src={whyus} alt="whyus" />
+              <h4 className="font-size-20 heading-section prim-color mr-tb-20">
                 Personal Designer
               </h4>
               <p>
@@ -536,8 +555,8 @@ export const BodyComponent = () => {
             </div>
 
             <div className="container">
-              <img src={whyus} alt="" />
-              <h4 className="heading-section prim-color mr-tb-20">
+              <img src={vrBox} alt="vrBox" />
+              <h4 className="font-size-20 heading-section prim-color mr-tb-20">
                 VR Experience
               </h4>
               <p>
@@ -546,8 +565,8 @@ export const BodyComponent = () => {
             </div>
 
             <div className="container">
-              <img src={whyus} alt="" />
-              <h4 className="heading-section prim-color mr-tb-20">
+              <img src={impeccable} alt="impeccable" />
+              <h4 className="font-size-20 heading-section prim-color mr-tb-20">
                 Impeccable Implementation
               </h4>
               <p>
@@ -556,8 +575,8 @@ export const BodyComponent = () => {
             </div>
 
             <div className="container">
-              <img src={whyus} alt="" />
-              <h4 className="heading-section prim-color mr-tb-20">
+              <img src={partners} alt="partners" />
+              <h4 className="font-size-20 heading-section prim-color mr-tb-20">
                 Reputed Partners
               </h4>
               <p>
@@ -566,8 +585,8 @@ export const BodyComponent = () => {
             </div>
 
             <div className="container">
-              <img src={whyus} alt="" />
-              <h4 className="heading-section prim-color mr-tb-20">
+              <img src={built} alt="built" />
+              <h4 className="font-size-20 heading-section prim-color mr-tb-20">
                 Built to Last
               </h4>
               <p>
@@ -576,8 +595,8 @@ export const BodyComponent = () => {
             </div>
 
             <div className="container">
-              <img src={whyus} alt="" />
-              <h4 className="heading-section prim-color mr-tb-20">
+              <img src={appHome} alt="appHome" />
+              <h4 className="font-size-20 heading-section prim-color mr-tb-20">
                 App For Your Home
               </h4>
               <p>
@@ -586,8 +605,8 @@ export const BodyComponent = () => {
             </div>
 
             <div className="container">
-              <img src={whyus} alt="" />
-              <h4 className="heading-section prim-color mr-tb-20">
+              <img src={prices} alt="prices" />
+              <h4 className="font-size-20 heading-section prim-color mr-tb-20">
                 Transparent Prices
               </h4>
               <p>
@@ -596,8 +615,8 @@ export const BodyComponent = () => {
             </div>
 
             <div className="container">
-              <img src={whyus} alt="" />
-              <h4 className="heading-section prim-color mr-tb-20">
+              <img src={warranty} alt="warranty" />
+              <h4 className="font-size-20 heading-section prim-color mr-tb-20">
                 10 year warranty
               </h4>
               <p>

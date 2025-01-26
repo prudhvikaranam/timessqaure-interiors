@@ -342,7 +342,7 @@ body {
 }
 
 .work-card img {
-  width: 60%;
+  width: 85%;
 }
 
 .work-header {
@@ -364,17 +364,19 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  width: 80%;
+  margin: 40px auto;
 }
 
 .image-container {
-  width: 40%;
+  width: 48%;
   position: relative;
 }
 
 
 .image-container img {
   width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 3/1.9;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;

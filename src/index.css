@@ -426,10 +426,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 
 .project-container .images-container .right-container a {
-  width: 48%;
+  width: 31%;
 }
 
 .project-container .images-container .right-container a .image {
@@ -1162,6 +1163,10 @@ button {
     width: 100%;
   }
 
+
+  .project-container .images-container .right-container a{
+    width: 48%;
+  }
 }
 
 

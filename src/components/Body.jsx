@@ -1,13 +1,23 @@
 import workDesign from "../assets/images/work-design.png";
-import project_1 from "../assets/images/project-1.jpg";
-import project_2 from "../assets/images/project-2.jpg";
-import project_3 from "../assets/images/project-3.jpg";
-import project_4 from "../assets/images/project-4.jpeg";
-import project_5 from "../assets/images/project-5.jpeg";
-import project_6 from "../assets/images/project-6.jpeg";
-import project_7 from "../assets/images/project-7.jpeg";
-import project_8 from "../assets/images/project-8.jpeg";
-import project_9 from "../assets/images/project-9.jpeg";
+import project_1 from "../assets/images/projects/projects-1/project-1.jpg";
+import project_2 from "../assets/images/projects/projects-1/project-2.jpg";
+import project_3 from "../assets/images/projects/projects-1/project-3.jpg";
+import project_4 from "../assets/images/projects/projects-1/project-4.jpeg";
+import project_5 from "../assets/images/projects/projects-1/project-5.jpeg";
+import project_6 from "../assets/images/projects/projects-1/project-6.jpeg";
+import project_7 from "../assets/images/projects/projects-1/project-7.jpeg";
+import project_8 from "../assets/images/projects/projects-1/project-8.jpeg";
+import project_9 from "../assets/images/projects/projects-1/project-9.jpeg";
+
+
+import project_2_1 from "../assets/images/projects/projects-2/project_2_1.jpeg";
+import project_2_2 from "../assets/images/projects/projects-2/project_2_2.jpeg";
+import project_2_3 from "../assets/images/projects/projects-2/project_2_3.jpeg";
+import project_2_4 from "../assets/images/projects/projects-2/project_2_4.jpeg";
+import project_2_5 from "../assets/images/projects/projects-2/project_2_5.jpeg";
+import project_2_6 from "../assets/images/projects/projects-2/project_2_6.jpeg";
+
+
 
 
 import user1 from "../assets/images/user1.png";
@@ -299,34 +309,48 @@ export const BodyComponent = () => {
           <div className="project-container mr-tb-40">
             <div className="images-container" id="designer2-gallery">
               <div className="right-container">
-                <a href={project_1}>
+                <a href={project_2_1}>
                   <img
-                    src={project_1}
+                    src={project_2_1}
                     alt="project"
                     className="image image-1"
                     data-src={project_1}
                   />
                 </a>
-                <a href={project_2}>
+                <a href={project_2_2}>
                   <img
-                    src={project_2}
+                    src={project_2_2}
                     alt="project"
                     className="image image-2"
                     data-src={project_2}
                   />
                 </a>
 
-                <a href={project_3}>
+                <a href={project_2_3}>
                   <img
-                    src={project_3}
+                    src={project_2_3}
                     alt="project"
                     className="image image-3"
                   />
                 </a>
 
-                <a href={project_4}>
+                <a href={project_2_4}>
                   <img
-                    src={project_4}
+                    src={project_2_4}
+                    alt="project"
+                    className="image image-4"
+                  />
+                </a>
+                <a href={project_2_5}>
+                  <img
+                    src={project_2_5}
+                    alt="project"
+                    className="image image-4"
+                  />
+                </a>
+                <a href={project_2_6}>
+                  <img
+                    src={project_2_6}
                     alt="project"
                     className="image image-4"
                   />

@@ -1,4 +1,4 @@
-import workDesign from "../assets/images/work-design.png";
+// import workDesign from "../assets/images/work-design.png";
 // import project_3_1 from "../assets/images/projects/projects-3/project_3_1.jpg";
 // import project_3_2 from "../assets/images/projects/projects-3/project_3_2.jpg";
 // import project_3_3 from "../assets/images/projects/projects-3/project_3_3.jpg";
@@ -61,7 +61,7 @@ import whyus from "../assets/images/whyUs/whyus.png";
 import built from "../assets/images/whyUs/built.png";
 
 // we work
-import designwedo from "../assets/images/ourprocess/design.png";
+// import designwedo from "../assets/images/ourprocess/design.png";
 import wedesign from "../assets/images/ourprocess/wedesign.jpg";
 import visualize from "../assets/images/ourprocess/visualize.png";
 import implementationImage from "../assets/images/ourprocess/implementationImage.gif";

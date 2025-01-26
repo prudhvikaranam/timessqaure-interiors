@@ -10,12 +10,12 @@ import { useEffect, useRef } from "react";
 // import project_3_9 from "../assets/images/projects/projects-3/project_3_9.jpeg";
 
 
-import project_2_1 from "../assets/images/projects/projects-2/project_2_1.jpeg";
-import project_2_2 from "../assets/images/projects/projects-2/project_2_2.jpeg";
-import project_2_3 from "../assets/images/projects/projects-2/project_2_3.jpeg";
-import project_2_4 from "../assets/images/projects/projects-2/project_2_4.jpeg";
-import project_2_5 from "../assets/images/projects/projects-2/project_2_5.jpeg";
-import project_2_6 from "../assets/images/projects/projects-2/project_2_6.jpeg";
+// import project_2_1 from "../assets/images/projects/projects-2/project_2_1.jpeg";
+// import project_2_2 from "../assets/images/projects/projects-2/project_2_2.jpeg";
+// import project_2_3 from "../assets/images/projects/projects-2/project_2_3.jpeg";
+// import project_2_4 from "../assets/images/projects/projects-2/project_2_4.jpeg";
+// import project_2_5 from "../assets/images/projects/projects-2/project_2_5.jpeg";
+// import project_2_6 from "../assets/images/projects/projects-2/project_2_6.jpeg";
 
 
 

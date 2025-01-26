@@ -1,13 +1,13 @@
 import workDesign from "../assets/images/work-design.png";
-import project_3_1 from "../assets/images/projects/projects-3/project_3_1.jpg";
-import project_3_2 from "../assets/images/projects/projects-3/project_3_2.jpg";
-import project_3_3 from "../assets/images/projects/projects-3/project_3_3.jpg";
-import project_3_4 from "../assets/images/projects/projects-3/project_3_4.jpeg";
-import project_3_5 from "../assets/images/projects/projects-3/project_3_5.jpeg";
-import project_3_6 from "../assets/images/projects/projects-3/project_3_6.jpeg";
-import project_3_7 from "../assets/images/projects/projects-3/project_3_7.jpeg";
-import project_3_8 from "../assets/images/projects/projects-3/project_3_8.jpeg";
-import project_3_9 from "../assets/images/projects/projects-3/project_3_9.jpeg";
+// import project_3_1 from "../assets/images/projects/projects-3/project_3_1.jpg";
+// import project_3_2 from "../assets/images/projects/projects-3/project_3_2.jpg";
+// import project_3_3 from "../assets/images/projects/projects-3/project_3_3.jpg";
+// import project_3_4 from "../assets/images/projects/projects-3/project_3_4.jpeg";
+// import project_3_5 from "../assets/images/projects/projects-3/project_3_5.jpeg";
+// import project_3_6 from "../assets/images/projects/projects-3/project_3_6.jpeg";
+// import project_3_7 from "../assets/images/projects/projects-3/project_3_7.jpeg";
+// import project_3_8 from "../assets/images/projects/projects-3/project_3_8.jpeg";
+// import project_3_9 from "../assets/images/projects/projects-3/project_3_9.jpeg";
 
 
 import project_2_1 from "../assets/images/projects/projects-2/project_2_1.jpeg";

@@ -1,13 +1,13 @@
 import workDesign from "../assets/images/work-design.png";
-import project_1 from "../assets/images/projects/projects-1/project-1.jpg";
-import project_2 from "../assets/images/projects/projects-1/project-2.jpg";
-import project_3 from "../assets/images/projects/projects-1/project-3.jpg";
-import project_4 from "../assets/images/projects/projects-1/project-4.jpeg";
-import project_5 from "../assets/images/projects/projects-1/project-5.jpeg";
-import project_6 from "../assets/images/projects/projects-1/project-6.jpeg";
-import project_7 from "../assets/images/projects/projects-1/project-7.jpeg";
-import project_8 from "../assets/images/projects/projects-1/project-8.jpeg";
-import project_9 from "../assets/images/projects/projects-1/project-9.jpeg";
+import project_3_1 from "../assets/images/projects/projects-3/project_3_1.jpg";
+import project_3_2 from "../assets/images/projects/projects-3/project_3_2.jpg";
+import project_3_3 from "../assets/images/projects/projects-3/project_3_3.jpg";
+import project_3_4 from "../assets/images/projects/projects-3/project_3_4.jpeg";
+import project_3_5 from "../assets/images/projects/projects-3/project_3_5.jpeg";
+import project_3_6 from "../assets/images/projects/projects-3/project_3_6.jpeg";
+import project_3_7 from "../assets/images/projects/projects-3/project_3_7.jpeg";
+import project_3_8 from "../assets/images/projects/projects-3/project_3_8.jpeg";
+import project_3_9 from "../assets/images/projects/projects-3/project_3_9.jpeg";
 
 
 import project_2_1 from "../assets/images/projects/projects-2/project_2_1.jpeg";
@@ -16,6 +16,24 @@ import project_2_3 from "../assets/images/projects/projects-2/project_2_3.jpeg";
 import project_2_4 from "../assets/images/projects/projects-2/project_2_4.jpeg";
 import project_2_5 from "../assets/images/projects/projects-2/project_2_5.jpeg";
 import project_2_6 from "../assets/images/projects/projects-2/project_2_6.jpeg";
+
+
+
+import project_1_1 from "../assets/images/projects/projects-1/project_1_1.jpeg";
+import project_1_2 from "../assets/images/projects/projects-1/project_1_2.jpeg";
+import project_1_3 from "../assets/images/projects/projects-1/project_1_3.jpeg";
+import project_1_4 from "../assets/images/projects/projects-1/project_1_4.jpeg";
+import project_1_5 from "../assets/images/projects/projects-1/project_1_5.jpeg";
+import project_1_6 from "../assets/images/projects/projects-1/project_1_6.jpeg";
+import project_1_7 from "../assets/images/projects/projects-1/project_1_7.jpeg";
+import project_1_8 from "../assets/images/projects/projects-1/project_1_8.jpeg";
+import project_1_9 from "../assets/images/projects/projects-1/project_1_9.jpeg";
+import project_1_10 from "../assets/images/projects/projects-1/project_1_10.jpeg";
+import project_1_11 from "../assets/images/projects/projects-1/project_1_11.jpeg";
+import project_1_12 from "../assets/images/projects/projects-1/project_1_12.jpeg";
+import project_1_13 from "../assets/images/projects/projects-1/project_1_13.jpeg";
+import project_1_14 from "../assets/images/projects/projects-1/project_1_14.jpeg";
+
 
 
 
@@ -205,76 +223,187 @@ export const BodyComponent = () => {
             <div className="images-container" id="designer1-gallery">
               <div className="right-container">
 
-                <a href={project_4}>
+
+              <a href={project_1_1}>
                   <img
-                    src={project_4}
+                    src={project_1_1}
                     alt="project"
                     className="image image-4"
                   />
                 </a>
-                <a href={project_2}>
+                <a href={project_1_2}>
                   <img
-                    src={project_2}
+                    src={project_1_2}
                     alt="project"
                     className="image image-2"
-                    data-src={project_2}
+                    data-src={project_1_2}
                   />
                 </a>
-                <a href={project_1}>
+                <a href={project_1_3}>
                   <img
-                    src={project_1}
+                    src={project_1_3}
                     alt="project"
                     className="image image-1"
-                    data-src={project_1}
+                    data-src={project_1_3}
                   />
                 </a>
-                <a href={project_3}>
+                <a href={project_1_4}>
                   <img
-                    src={project_3}
+                    src={project_1_4}
                     alt="project"
                     className="image image-3"
                   />
                 </a>
-                <a href={project_5}>
+                <a href={project_1_5}>
                   <img
-                    src={project_5}
+                    src={project_1_5}
                     alt="project"
                     className="image image-5"
                   />
                 </a>
 
-                <a href={project_6}>
+                <a href={project_1_6}>
                   <img
-                    src={project_6}
+                    src={project_1_6}
                     alt="project"
                     className="image image-6"
                   />
                 </a>
 
 
-                <a href={project_7}>
+                <a href={project_1_7}>
                   <img
-                    src={project_7}
+                    src={project_1_7}
                     alt="project"
                     className="image image-6 image-hidden"
                   />
                 </a>
 
-                <a href={project_8}>
+                <a href={project_1_8}>
                   <img
-                    src={project_8}
+                    src={project_1_8}
                     alt="project"
                     className="image image-6 image-hidden"
                   />
                 </a>
 
-                <a href={project_9}>
+                <a href={project_1_9}>
                   <img
-                    src={project_9}
+                    src={project_1_9}
                     alt="project"
                     className="image image-6 image-hidden"
                   />
                 </a>
+
+                <a href={project_1_10}>
+                  <img
+                    src={project_1_10}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+                <a href={project_1_11}>
+                  <img
+                    src={project_1_11}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+                <a href={project_1_12}>
+                  <img
+                    src={project_1_12}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+                <a href={project_1_13}>
+                  <img
+                    src={project_1_13}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+
+                <a href={project_1_14}>
+                  <img
+                    src={project_1_14}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+
+
+
+                {/* <a href={project_3_4}>
+                  <img
+                    src={project_3_4}
+                    alt="project"
+                    className="image image-4"
+                  />
+                </a>
+                <a href={project_3_2}>
+                  <img
+                    src={project_3_2}
+                    alt="project"
+                    className="image image-2"
+                    data-src={project_3_2}
+                  />
+                </a>
+                <a href={project_3_1}>
+                  <img
+                    src={project_3_1}
+                    alt="project"
+                    className="image image-1"
+                    data-src={project_3_1}
+                  />
+                </a>
+                <a href={project_3_3}>
+                  <img
+                    src={project_3_3}
+                    alt="project"
+                    className="image image-3"
+                  />
+                </a>
+                <a href={project_3_5}>
+                  <img
+                    src={project_3_5}
+                    alt="project"
+                    className="image image-5"
+                  />
+                </a>
+
+                <a href={project_3_6}>
+                  <img
+                    src={project_3_6}
+                    alt="project"
+                    className="image image-6"
+                  />
+                </a>
+
+
+                <a href={project_3_7}>
+                  <img
+                    src={project_3_7}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+
+                <a href={project_3_8}>
+                  <img
+                    src={project_3_8}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+
+                <a href={project_3_9}>
+                  <img
+                    src={project_3_9}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a> */}
 
               </div>
               {/* <div className="left-container">
@@ -314,7 +443,7 @@ export const BodyComponent = () => {
                     src={project_2_1}
                     alt="project"
                     className="image image-1"
-                    data-src={project_1}
+                    data-src={project_2_1}
                   />
                 </a>
                 <a href={project_2_2}>
@@ -322,7 +451,7 @@ export const BodyComponent = () => {
                     src={project_2_2}
                     alt="project"
                     className="image image-2"
-                    data-src={project_2}
+                    data-src={project_2_2}
                   />
                 </a>
 

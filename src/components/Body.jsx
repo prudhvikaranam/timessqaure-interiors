@@ -126,7 +126,7 @@ export const BodyComponent = () => {
 
 
       <div className="contact-whatsApp">
-        <a href="https://wa.me/+919849446023" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/+919000178171" target="_blank" rel="noopener noreferrer">
           <img src={whatsApp} alt="whatsApps-icon" className="whatsApp-image" />
         </a>
       </div>

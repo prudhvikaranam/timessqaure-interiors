@@ -105,11 +105,18 @@ export const Header = () => {
                   timessquareaj@gmail.com
                 </a>
                 <a
-                  className="prim-color fw-100 contact-link"
-                  href="tel:+91 9849446023"
+                  className="fw-100 contact-link"
+                  href="tel:+91 9000178171"
                 >
                   <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;
-                  +91 9849446023
+                  +91 9000178171
+                </a>
+                <a
+                  className="fw-100 contact-link"
+                  href="tel:+91 9000178141"
+                >
+                  <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;
+                  +91 9000178141
                 </a>
               </div>
 

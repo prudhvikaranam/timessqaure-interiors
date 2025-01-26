@@ -119,10 +119,8 @@ body {
 }
 
 #navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Darker background when scrolled */
+  /* background-color: rgba(0, 0, 0, 0.5); */
   top: -100px;
-  /* Move navbar up when scrolled */
 }
 
 

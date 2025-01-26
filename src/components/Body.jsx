@@ -38,7 +38,7 @@ import project_1_14 from "../assets/images/projects/projects-1/project_1_14.jpeg
 
 
 
-import user1 from "../assets/images/user1.png";
+import user1 from "../assets/images/chandu.jpeg";
 import user2 from "../assets/images/user2.jpeg";
 import whyus from "../assets/images/whyus.png";
 import { useEffect, useRef } from "react";
@@ -619,7 +619,7 @@ export const BodyComponent = () => {
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
-                  Raheja Constructions
+                  My Home Tarksha
                 </div>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consectetur fugiat nobis debitis ipsa dolores aspernatur, natus
@@ -641,7 +641,7 @@ export const BodyComponent = () => {
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
-                  Prestige Apartments
+                  My Home Tridasa
                 </div>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consectetur fugiat nobis debitis ipsa dolores aspernatur, natus
@@ -663,7 +663,7 @@ export const BodyComponent = () => {
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
-                  EAPL apartment
+                  Meda Heights
                 </div>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consectetur fugiat nobis debitis ipsa dolores aspernatur, natus

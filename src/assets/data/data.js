@@ -17,7 +17,7 @@ export const navData = {
         ]
       },
       { name: "How we work", id: "weWork" },
-      { name: "Interiors", id: "" }
+      // { name: "Interiors", id: "" }
     ]
   },
 

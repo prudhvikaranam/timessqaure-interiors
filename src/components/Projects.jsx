@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import project_1 from "../assets/images/project-1.jpeg";
-import project_2 from "../assets/images/project-2.jpeg";
-import project_3 from "../assets/images/project-3.jpeg";
+import project_1 from "../assets/images/project-1.jpg";
+import project_2 from "../assets/images/project-2.jpg";
+import project_3 from "../assets/images/project-3.jpg";
 
 export const Projects = () => {
   const designer1galleryRef = useRef(null);

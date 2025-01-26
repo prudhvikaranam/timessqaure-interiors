@@ -100,9 +100,9 @@ export const Header = () => {
 
             <div className="navbar-left desktop">
               <div className="menu-contact-details">
-                <a href="mailto:Sample@test.com" className="contact-link">
+                <a href="mailto:timessquareaj@gmail.com" className="contact-link">
                   <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
-                  Sample@test.com
+                  timessquareaj@gmail.com
                 </a>
                 <a
                   className="prim-color fw-100 contact-link"
@@ -166,7 +166,7 @@ export const Header = () => {
         {showHamburgerMenu && (
           <div className="mobile-menu-items" id="mobile-menu-items" ref={menuRef}>
             <p className="mobile-contact-detail font-prim">
-              <a href="mailto:Sample@test.com" className="prim-color">
+              <a href="mailto:timessquareaj@gmail.com" className="prim-color">
                 <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;EMAIL US
               </a>
 

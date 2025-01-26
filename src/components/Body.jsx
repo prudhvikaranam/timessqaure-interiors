@@ -1,9 +1,15 @@
 import workDesign from "../assets/images/work-design.png";
-import project_1 from "../assets/images/project-1.jpeg";
-import project_2 from "../assets/images/project-2.jpeg";
-import project_3 from "../assets/images/project-3.jpeg";
+import project_1 from "../assets/images/project-1.jpg";
+import project_2 from "../assets/images/project-2.jpg";
+import project_3 from "../assets/images/project-3.jpg";
 import project_4 from "../assets/images/project-4.jpeg";
 import project_5 from "../assets/images/project-5.jpeg";
+import project_6 from "../assets/images/project-6.jpeg";
+import project_7 from "../assets/images/project-7.jpeg";
+import project_8 from "../assets/images/project-8.jpeg";
+import project_9 from "../assets/images/project-9.jpeg";
+
+
 import user1 from "../assets/images/user1.png";
 import user2 from "../assets/images/user2.jpg";
 import whyus from "../assets/images/whyus.png";
@@ -188,12 +194,12 @@ export const BodyComponent = () => {
           <div className="project-container mr-tb-40">
             <div className="images-container" id="designer1-gallery">
               <div className="right-container">
-                <a href={project_1}>
+
+                <a href={project_4}>
                   <img
-                    src={project_1}
+                    src={project_4}
                     alt="project"
-                    className="image image-1"
-                    data-src={project_1}
+                    className="image image-4"
                   />
                 </a>
                 <a href={project_2}>
@@ -204,7 +210,14 @@ export const BodyComponent = () => {
                     data-src={project_2}
                   />
                 </a>
-
+                <a href={project_1}>
+                  <img
+                    src={project_1}
+                    alt="project"
+                    className="image image-1"
+                    data-src={project_1}
+                  />
+                </a>
                 <a href={project_3}>
                   <img
                     src={project_3}
@@ -212,16 +225,6 @@ export const BodyComponent = () => {
                     className="image image-3"
                   />
                 </a>
-
-                <a href={project_4}>
-                  <img
-                    src={project_4}
-                    alt="project"
-                    className="image image-4"
-                  />
-                </a>
-              </div>
-              <div className="left-container">
                 <a href={project_5}>
                   <img
                     src={project_5}
@@ -229,7 +232,50 @@ export const BodyComponent = () => {
                     className="image image-5"
                   />
                 </a>
+
+                <a href={project_6}>
+                  <img
+                    src={project_6}
+                    alt="project"
+                    className="image image-6"
+                  />
+                </a>
+
+
+                <a href={project_7}>
+                  <img
+                    src={project_7}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+
+                <a href={project_8}>
+                  <img
+                    src={project_8}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+
+                <a href={project_9}>
+                  <img
+                    src={project_9}
+                    alt="project"
+                    className="image image-6 image-hidden"
+                  />
+                </a>
+
               </div>
+              {/* <div className="left-container">
+                <a href={project_5}>
+                  <img
+                    src={project_5}
+                    alt="project"
+                    className="image image-5"
+                  />
+                </a>
+              </div> */}
             </div>
             <div className="project-designer mr-tb-40">
               <div className="rt-c">
@@ -242,10 +288,7 @@ export const BodyComponent = () => {
                     <br />
                     Interior Designer
                   </p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Consectetur fugiat nobis debitis ipsa dolores aspernatur,
-                  natus eveniet voluptates dignissimos ab ipsam delectus sit
-                  veniam accusamus minus cum voluptas iste. Repellat!
+                  <p>I had a fantastic experience working with Times Square Interiors on my home’s redesign. They truly listened to my needs and delivered a space that’s both beautiful and functional. Their creativity, attention to detail, and communication throughout the process made everything so smooth. I’m thrilled with the final result and would highly recommend them for any interior design project!</p>
                 </div>
               </div>
             </div>
@@ -289,7 +332,7 @@ export const BodyComponent = () => {
                   />
                 </a>
               </div>
-              <div className="left-container">
+              {/* <div className="left-container">
                 <a href={project_5}>
                   <img
                     src={project_5}
@@ -297,7 +340,7 @@ export const BodyComponent = () => {
                     className="image image-5"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="project-designer mr-tb-40">
               <div className="rt-c">
@@ -310,10 +353,7 @@ export const BodyComponent = () => {
                     <br />
                     Interior Designer
                   </p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Consectetur fugiat nobis debitis ipsa dolores aspernatur,
-                  natus eveniet voluptates dignissimos ab ipsam delectus sit
-                  veniam accusamus minus cum voluptas iste. Repellat!
+                  <p>Swathi reddy from Times Square Interiors is simply sooper in explaining and making customer explore al the options related to hafele fittings and appliances. she is very patient and hospitable towards the stomer.. very down to earth and polite. i have given this review out of my interest as I was so pleased with her hospitality and presentation. it's a very big plus for brands which are competing in an international level.</p>
                 </div>
               </div>
             </div>
@@ -348,8 +388,7 @@ export const BodyComponent = () => {
                 VR Experience
               </h4>
               <p>
-                Will transform your every need into functional & aesthetic
-                design, and help you plan your space intelligently
+                Our state-of-the-art Virtual Reality technology lets you ‘try before you buy’
               </p>
             </div>
 
@@ -359,8 +398,7 @@ export const BodyComponent = () => {
                 Impeccable Implementation
               </h4>
               <p>
-                Will transform your every need into functional & aesthetic
-                design, and help you plan your space intelligently
+                Get a personal Project Manager, receive daily updates from site, and watch us turn your design into reality
               </p>
             </div>
 
@@ -370,52 +408,47 @@ export const BodyComponent = () => {
                 Reputed Partners
               </h4>
               <p>
-                Will transform your every need into functional & aesthetic
-                design, and help you plan your space intelligently
+                One look at our partners & you will realise that they are all category experts
               </p>
             </div>
 
             <div className="container">
               <img src={whyus} alt="" />
               <h4 className="heading-section prim-color mr-tb-20">
-                Personal Designer
+                Built to Last
               </h4>
               <p>
-                Will transform your every need into functional & aesthetic
-                design, and help you plan your space intelligently
+                We ensure the best raw material, German machinery & exemplary factory finish
               </p>
             </div>
 
             <div className="container">
               <img src={whyus} alt="" />
               <h4 className="heading-section prim-color mr-tb-20">
-                VR Experience
+                App For Your Home
               </h4>
               <p>
-                Will transform your every need into functional & aesthetic
-                design, and help you plan your space intelligently
+                Our home automation partners will help you control everything in your home, using nothing but just an app
               </p>
             </div>
 
             <div className="container">
               <img src={whyus} alt="" />
               <h4 className="heading-section prim-color mr-tb-20">
-                Impeccable Implementation
+                Transparent Prices
               </h4>
               <p>
-                Will transform your every need into functional & aesthetic
-                design, and help you plan your space intelligently
+                Same Price Guarantee whether you directly buy from us or from our partners
               </p>
             </div>
 
             <div className="container">
               <img src={whyus} alt="" />
               <h4 className="heading-section prim-color mr-tb-20">
-                Reputed Partners
+                10 year warranty
               </h4>
               <p>
-                Will transform your every need into functional & aesthetic
-                design, and help you plan your space intelligently
+                Breathe easy for the next 10 years. Although all our products will last way more
               </p>
             </div>
           </div>

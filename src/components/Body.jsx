@@ -712,7 +712,7 @@ export const BodyComponent = () => {
 
         <Footer />
         <div className="body-bg-image">
-          <img src={homeBg} className="body-bg-img"/>
+          <img src={homeBg} className="body-bg-img" alt="body-bg-img"/>
           <div className="body-overlay-bg"></div> 
         </div>
       </div>

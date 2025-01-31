@@ -67,6 +67,7 @@ import visualize from "../assets/images/ourprocess/visualize.png";
 import implementationImage from "../assets/images/ourprocess/implementationImage.gif";
 
 
+import homeBg from "../assets/images/homebg.jpg";
 
 
 export const BodyComponent = () => {
@@ -710,6 +711,10 @@ export const BodyComponent = () => {
         </div>
 
         <Footer />
+        <div className="body-bg-image">
+          <img src={homeBg} className="body-bg-img"/>
+          <div className="body-overlay-bg"></div> 
+        </div>
       </div>
 
       {/* </div> */}

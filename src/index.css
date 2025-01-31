@@ -15,22 +15,23 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;  
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e7345e; 
-  border-radius: 10px;  
+  background-color: #e7345e;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f0f0f0; 
-  border-radius: 10px;  
+  background-color: #f0f0f0;
+  border-radius: 10px;
 }
 
 /* Optional: Scrollbar when focused or hovered */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #c1143a;  /* A darker shade for hover effect */
+  background-color: #c1143a;
+  /* A darker shade for hover effect */
 }
 
 .divider {
@@ -518,6 +519,12 @@ body {
 
 
 
+.customer-review .review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 
 
 /* Ideas */
@@ -659,8 +666,10 @@ body {
   border-radius: 8px;
   position: relative;
   width: 55%;
-  max-height: 80vh; /* Max height set to 80% of the viewport height */
-  overflow-y: auto; /* Allow vertical scrolling */
+  max-height: 80vh;
+  /* Max height set to 80% of the viewport height */
+  overflow-y: auto;
+  /* Allow vertical scrolling */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.5);
 }
@@ -682,7 +691,8 @@ body {
   cursor: pointer;
   padding: 5px;
   border: 2px solid white;
-  z-index: 1000; /* Ensure the close button is above other content */
+  z-index: 1000;
+  /* Ensure the close button is above other content */
 }
 
 .close-btn:hover {
@@ -718,11 +728,13 @@ button {
 
 @media (max-width: 768px) {
   .modal-content {
-    width: 90%; /* Make the modal content take up 90% of the screen width on smaller screens */
+    width: 90%;
+    /* Make the modal content take up 90% of the screen width on smaller screens */
   }
 
   .contact-form {
-    gap: 15px; /* Reduce the gap between form elements */
+    gap: 15px;
+    /* Reduce the gap between form elements */
   }
 }
 
@@ -1156,16 +1168,16 @@ button {
     width: 30%;
   }
 
-  .themes-images-container{
+  .themes-images-container {
     flex-direction: column;
   }
 
-  .image-container{
+  .image-container {
     width: 100%;
   }
 
 
-  .project-container .images-container .right-container a{
+  .project-container .images-container .right-container a {
     width: 48%;
   }
 }
@@ -1335,7 +1347,7 @@ h3::after {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 90%;
+  width: 100%;
 }
 
 .ourword-main-container .container::after {
@@ -1434,6 +1446,6 @@ p {
 }
 
 
-.image-hidden{
+.image-hidden {
   display: none;
 }

@@ -634,16 +634,18 @@ export const BodyComponent = () => {
 
           <div className="reviews-container">
             <div className="customer-review">
-              <div className="review- mr-tb-10">
+              <div className="review mr-tb-10">
                 <div className="customer-name mr-tb-10">
-                  Shiva Ram Reddy
+                  Srinivas. K
                   <br />
                   My Home Tarksha
                 </div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consectetur fugiat nobis debitis ipsa dolores aspernatur, natus
-                eveniet voluptates dignissimos ab ipsam delectus sit veniam
-                accusamus minus cum voluptas iste. Repellat!
+                {/* I had the absolute pleasure of working with this agency, and I can’t recommend them enough. From start to finish, their attention to detail and ability to transform my space exceeded all expectations. The team took the time to truly understand my style and needs, blending both functionality and beauty in a way I hadn’t imagined. They’re not just designers—they’re visionaries who bring an authentic, personal touch to every project. The space feels both luxurious and inviting, and I’ve received endless compliments on the transformation. If you're looking for a design team that listens, innovates, and delivers, look no further */}
+
+                <p>Times Square exceeded all expectations! They listened to my vision, adding their creative touch to transform my space into something stylish and functional. The attention to detail and quality of work is unmatched. Highly recommend for any design project!"
+
+                </p>
+
                 <br />
                 <div className="star-rating">
                   <span className="star filled">&#9733;</span>
@@ -656,16 +658,16 @@ export const BodyComponent = () => {
             </div>
 
             <div className="customer-review">
-              <div className="review- mr-tb-10">
+              <div className="review mr-tb-10">
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
                   My Home Tridasa
                 </div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consectetur fugiat nobis debitis ipsa dolores aspernatur, natus
-                eveniet voluptates dignissimos ab ipsam delectus sit veniam
-                accusamus minus cum voluptas iste. Repellat!
+
+                <p>
+                  I’m beyond thrilled with my space! The designers truly understood my needs and created a home that’s both stylish and functional. Their expertise and professionalism shone through every step of the project. Worth every bit of investment!
+                </p>
                 <br />
                 <div className="star-rating">
                   <span className="star filled">&#9733;</span>
@@ -678,16 +680,15 @@ export const BodyComponent = () => {
             </div>
 
             <div className="customer-review">
-              <div className="review- mr-tb-10">
+              <div className="review mr-tb-10">
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
                   Meda Heights
                 </div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consectetur fugiat nobis debitis ipsa dolores aspernatur, natus
-                eveniet voluptates dignissimos ab ipsam delectus sit veniam
-                accusamus minus cum voluptas iste. Repellat!
+                <p>
+                  Working with this design team was a fantastic experience! They perfectly balanced style and function, transforming my space into something fresh and inviting. Highly professional, creative, and easy to work with—definitely recommend!
+                </p>
                 <br />
                 <div className="star-rating">
                   <span className="star filled">&#9733;</span>

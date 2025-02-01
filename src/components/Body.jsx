@@ -639,7 +639,7 @@ export const BodyComponent = () => {
                 <div className="customer-name mr-tb-10">
                   Srinivas. K
                   <br />
-                  My Home Tarksha
+                  <p className="mr-t-10">My Home Tarksha</p>
                 </div>
                 {/* I had the absolute pleasure of working with this agency, and I can’t recommend them enough. From start to finish, their attention to detail and ability to transform my space exceeded all expectations. The team took the time to truly understand my style and needs, blending both functionality and beauty in a way I hadn’t imagined. They’re not just designers—they’re visionaries who bring an authentic, personal touch to every project. The space feels both luxurious and inviting, and I’ve received endless compliments on the transformation. If you're looking for a design team that listens, innovates, and delivers, look no further */}
 
@@ -663,7 +663,7 @@ export const BodyComponent = () => {
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
-                  My Home Tridasa
+                  <p className="mr-t-10">My Home Tridasa</p>
                 </div>
 
                 <p>
@@ -685,7 +685,7 @@ export const BodyComponent = () => {
                 <div className="customer-name mr-tb-10">
                   Shiva Ram Reddy
                   <br />
-                  Meda Heights
+                  <p className="mr-t-10">Meda Heights</p>
                 </div>
                 <p>
                   Working with this design team was a fantastic experience! They perfectly balanced style and function, transforming my space into something fresh and inviting. Highly professional, creative, and easy to work with—definitely recommend!

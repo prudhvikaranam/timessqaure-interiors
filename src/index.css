@@ -69,6 +69,11 @@ body {
   margin: 0px 0px 30px 0px;
 }
 
+
+.mr-t-10 {
+  margin: 10px 0px 0px 0px;
+}
+
 .mr-t-30 {
   margin: 30px 0px 0px 0px;
 }
@@ -1454,11 +1459,9 @@ p {
 .body-bg-image{
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   z-index: -1;
   position: fixed;
   top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
 
@@ -1466,12 +1469,13 @@ p {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   top: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; 
+  object-fit: cover;
+  object-position: center; 
 }
 
 .body-overlay-bg{

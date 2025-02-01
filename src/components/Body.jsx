@@ -447,7 +447,7 @@ export const BodyComponent = () => {
                     <br />
                     Interior Designer
                   </p>
-                  <p>I had a fantastic experience working with Times Square Interiors on my home’s redesign. They truly listened to my needs and delivered a space that’s both beautiful and functional. Their creativity, attention to detail, and communication throughout the process made everything so smooth. I’m thrilled with the final result and would highly recommend them for any interior design project!</p>
+                  <p className="project-design-content">Our latest interior design project reflects our commitment to creating spaces that inspire. We worked closely with our client to bring their vision to life, focusing on a cohesive design that balances form and function. From selecting the perfect color palette to designing custom furniture and lighting solutions, every aspect was thoughtfully chosen to ensure the space is both beautiful and practical. The final result is an inviting and dynamic environment that enhances comfort and style.</p>
                 </div>
               </div>
             </div>
@@ -526,7 +526,7 @@ export const BodyComponent = () => {
                     <br />
                     Interior Designer
                   </p>
-                  <p>Swathi reddy from Times Square Interiors is simply sooper in explaining and making customer explore al the options related to hafele fittings and appliances. she is very patient and hospitable towards the stomer.. very down to earth and polite. i have given this review out of my interest as I was so pleased with her hospitality and presentation. it's a very big plus for brands which are competing in an international level.</p>
+                  <p className="project-design-content">We are excited to present our recent interior design project, where we seamlessly blended modern aesthetics with functional design. The space was carefully crafted to meet our client’s specific needs, using high-quality materials, custom furniture, and thoughtful lighting. Each design element was selected to create a harmonious atmosphere, ensuring the space is not only visually appealing but also practical and comfortable for everyday use.</p>
                 </div>
               </div>
             </div>
@@ -637,8 +637,7 @@ export const BodyComponent = () => {
             <div className="customer-review">
               <div className="review mr-tb-10">
                 <div className="customer-name mr-tb-10">
-                  Srinivas. K
-                  <br />
+                  <p className="fw-bold prim-color ">Srinivas. K</p>
                   <p className="mr-t-10">My Home Tarksha</p>
                 </div>
                 {/* I had the absolute pleasure of working with this agency, and I can’t recommend them enough. From start to finish, their attention to detail and ability to transform my space exceeded all expectations. The team took the time to truly understand my style and needs, blending both functionality and beauty in a way I hadn’t imagined. They’re not just designers—they’re visionaries who bring an authentic, personal touch to every project. The space feels both luxurious and inviting, and I’ve received endless compliments on the transformation. If you're looking for a design team that listens, innovates, and delivers, look no further */}
@@ -661,8 +660,7 @@ export const BodyComponent = () => {
             <div className="customer-review">
               <div className="review mr-tb-10">
                 <div className="customer-name mr-tb-10">
-                  Shiva Ram Reddy
-                  <br />
+                  <p className="fw-bold prim-color ">Kalyan Krishna</p>
                   <p className="mr-t-10">My Home Tridasa</p>
                 </div>
 
@@ -683,8 +681,7 @@ export const BodyComponent = () => {
             <div className="customer-review">
               <div className="review mr-tb-10">
                 <div className="customer-name mr-tb-10">
-                  Shiva Ram Reddy
-                  <br />
+                  <p className="fw-bold prim-color ">Subba Reddy</p>
                   <p className="mr-t-10">Meda Heights</p>
                 </div>
                 <p>
@@ -696,7 +693,7 @@ export const BodyComponent = () => {
                   <span className="star filled">&#9733;</span>
                   <span className="star filled">&#9733;</span>
                   <span className="star filled">&#9733;</span>
-                  <span className="star">&#9733;</span>
+                  <span className="star filled">&#9733;</span>
                 </div>
               </div>
             </div>
@@ -712,8 +709,8 @@ export const BodyComponent = () => {
 
         <Footer />
         <div className="body-bg-image">
-          <img src={homeBg} className="body-bg-img" alt="body-bg-img"/>
-          <div className="body-overlay-bg"></div> 
+          <img src={homeBg} className="body-bg-img" alt="body-bg-img" />
+          <div className="body-overlay-bg"></div>
         </div>
       </div>
 

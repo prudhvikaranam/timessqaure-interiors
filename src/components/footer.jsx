@@ -79,37 +79,52 @@ export const Footer = () => {
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder="Your Name *"
                     required
                   />
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Your Email"
+                    placeholder="Your Email *"
                     required
                   />
                   <input
                     type="tel"
                     id="mobile"
                     name="mobile"
-                    placeholder="Your Mobile Number"
+                    placeholder="Your Mobile Number *"
                     required
                   />
+
+                  <input
+                    type="text"
+                    id="property"
+                    name="property"
+                    placeholder="Property Name *"
+                    required
+                  />
+
+
                   <select id="dropdown" name="dropdown">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="Office Space">Office Space</option>
+                    <option value="1 BHK">1 BHK</option>
+                    <option value="2 BHK">2 BHK</option>
+                    <option value="3 BHK">3 BHK</option>
+                    <option value="4 BHK">4 BHK</option>
+                    <option value="4+ BHK">4+ BHK</option>
+
                   </select>
                   <select id="location" name="location">
-                    <option value="city1">City 1</option>
-                    <option value="city2">City 2</option>
-                    <option value="city3">City 3</option>
+                    <option value="HYDERABAD">HYDERABAD</option>
+                    <option value="ANATAPUR">ANANTAPUR</option>
                   </select>
                   <select id="possession" name="possession">
-                    <option value="own">Own</option>
-                    <option value="rent">Rent</option>
-                    <option value="lease">Lease</option>
+                    <option value="Already have Possession">Already have Possession</option>
+                    <option value="0-3 Months">In 0 - 3 Months</option>
+                    <option value="3-6 Months">In 3 - 6 Months</option>
+                    <option value="6 + Months">More than 6 Months</option>
+
                   </select>
                   <button type="submit" onClick={onFormSubmit}>
                     Submit

@@ -37,7 +37,7 @@ export const OurWork = () => {
           </div>
           <div className="container right">
             <div className="content">
-              <h2 className="font-size-18 prim-color">Take over</h2>
+              <h2 className="font-size-18 prim-color">HAND OVER</h2>
               <p className="font-size-15 mr-tb-20">
               The final step is the handover, where your vision becomes your reality. We take pride in delivering a space that exceeds your expectations. Every detail is perfected, ensuring that when we hand over the keys, you step into a space that feels completely yours—functional, beautiful, and inspiring. Our commitment doesn’t end with the design; we ensure everything is in place, ready for you to enjoy. <br/><br/>The handover is just the beginning of your journey in a space designed to enhance your life
               </p>

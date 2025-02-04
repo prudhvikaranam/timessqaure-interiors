@@ -69,7 +69,7 @@ export const Projects = () => {
 
         <h1 className="font-size-24 fw-100 mr-b-30 we-work pd-l-10">OUR RECENT PROJECTS</h1>
         <div className="our-main-projects-container">
-          <h2 className="fw-100 font-size-16 mr-b-15">
+          <h2 className="fw-100 font-size-16 mr-b-30">
             <span className="prim-color fw-bold font-size-18">Meda Heights</span>&nbsp;&nbsp;|&nbsp; 2 BHK
           </h2>
           <div className="our-projects-images-container" id="project1-gallery">
@@ -132,7 +132,7 @@ export const Projects = () => {
 
 
         <div className="our-main-projects-container">
-          <h2 className="fw-100 font-size-16 mr-b-15">
+          <h2 className="fw-100 font-size-16 mr-b-30">
             <span className="prim-color fw-bold font-size-18">My Home Tridasa</span>&nbsp;&nbsp;|&nbsp; 2 BHK
           </h2>
           <div className="our-projects-images-container" id="project1-gallery">
@@ -178,7 +178,7 @@ export const Projects = () => {
 
 
         <div className="our-main-projects-container">
-          <h2 className="fw-100 font-size-16 mr-b-15">
+          <h2 className="fw-100 font-size-16 mr-b-30">
             <span className="prim-color fw-bold font-size-18">My Home Tarksha</span>&nbsp;&nbsp;|&nbsp; 4 BHK
           </h2>
           <div className="our-projects-images-container" id="project1-gallery">

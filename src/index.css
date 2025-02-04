@@ -547,14 +547,15 @@ body {
 .ideas-container {
   display: grid;
   width: 80%;
-  grid-template-columns: repeat(5, minmax(auto, 100%));
+  grid-template-columns: repeat(4, minmax(auto, 100%));
   gap: 10px;
 }
 
 .ideas-container .idea-image img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 16 / 12;
+  object-fit: cover;
 }
 
 
@@ -1127,11 +1128,21 @@ button {
 
   .our-projects-images-container {
     grid-template-columns: 1fr;
+    flex-direction: column;
   }
+
+  .our-projects-images-container .left-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
 
   .our-projects-images-container .right-container {
     flex-direction: row;
     aspect-ratio: 2 / 1;
+    width: 100%;
+  }
+  .our-projects-images-container  .right-container > *{
+    width: 50%;
   }
 
   .our-projects-images-container .right-container>* {
